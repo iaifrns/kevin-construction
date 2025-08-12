@@ -17,4 +17,23 @@ const stats:{number: string, text:string}[] = [
     },
 ]
 
-export {stats}
+const stats2:{title:string, percent: number}[] =[
+    {
+        title:"Project Completion Rate",
+        percent: 95
+    },
+    {
+        title:"Client Satisfaction",
+        percent: 98
+    },
+    {
+        title:"Team Experience",
+        percent: 92
+    },
+    {
+        title:"Material Quality",
+        percent: 90
+    },
+]
+
+export {stats, stats2}

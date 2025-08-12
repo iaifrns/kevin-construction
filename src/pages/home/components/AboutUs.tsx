@@ -1,0 +1,118 @@
+import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
+import { images } from "../../../constants/images";
+
+const data: { title: string; desc: string[] }[] = [
+  {
+    title: "Vision",
+    desc: [
+      "Build with Purpose",
+      "Become a Regional Leader",
+      "Innovate Construction Methods",
+      "Promote Sustainable Development",
+    ],
+  },
+  {
+    title: "Mission",
+    desc: [
+      "Deliver Quality on Every Project",
+      "Prioritize Client Satisfaction",
+      "Empower Our Team",
+      "Build Relationships & Structures",
+    ],
+  },
+];
+
+const AboutUs = () => {
+  return (
+    <div className="flex justify-center w-[85%] items-center gap-6 max-[1035px]:flex-col max-[800px]:gap-6 max-[1035px]:gap-28 max-[1035px]:w-full h-fit">
+      <div className="relative flex-1 max-md:w-full ">
+        <div className="w-full min-[800px]:h-[95%] flex p-6 gap-6 items-center border-dotted border-secondary border-3 rounded-2xl max-[800px]:flex-col">
+          <img
+            src={images.ABOUT1}
+            alt={images.ABOUT1}
+            className="object-cover w-full h-full rounded-2xl max-[800px]:h-[450px]"
+          />
+          <img
+            src={images.ABOUT2}
+            alt={images.ABOUT2}
+            className="object-cover w-full h-full rounded-2xl max-[800px]:h-[450px]"
+          />
+        </div>
+        <div className="block max-[800px]:mt-4 min-[800px]:absolute w-full min-[800px]:-bottom-15">
+          <div className="flex w-full justify-center items-center">
+            <div className="p-4 bg-[rgb(230,230,220)] rounded-xl flex justify-center items-center">
+              <div className="p-4 flex flex-col gap-3 bg-white min-[900px]:max-w-[400px]">
+                <div className="flex justify-between items-center">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src={images.ABOUT1}
+                      alt={images.ABOUT1}
+                      className="w-15 h-15 rounded-full"
+                    />
+                    <div className="flex flex-col">
+                      <p className="font-bold font-poppins text-xl">
+                        John Patterson
+                      </p>
+                      <p className="text-subtext font-poppins">Founder & CEO</p>
+                    </div>
+                  </div>
+                  <Icon
+                    icon={"flowbite:quote-outline"}
+                    className="text-secondary text-[64px]"
+                  />
+                </div>
+                <p className="text-green-800 text-lg font-poppins">
+                  “Every project is a promise to deliver quality, safety, and
+                  satisfaction. Our commitment is as strong as the foundations
+                  we lay.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex-1 flex flex-col gap-4 max-[800px]:w-[95%] max-[1035px]:justify-center">
+        <p className="text-[rgb(95,95,95)] font-bold font-poppins [1035px]:text-sm">
+          ABOUT US
+        </p>
+        <p className="text-titletext font-poppins text-3xl min-[800px]:text-[52px] font-semibold">
+          Crafting Structures, <br />
+          Creating Relationships
+        </p>
+        <p className="font-poppins text-[rgb(100,100,100)] max-[1025px]:text-sm max-[800px]:w-[80%]">
+          Pellen tesque ornare libero ac lectus efficitur dapibus. Cras
+          tincidunt risus el vitae tortor aliquet, nec tincidunt felis bibendum.
+          Aliquam elemen tum vitaem commodo, et congue mi commodo quam sit amet
+          congue.
+        </p>
+        <div className="w-full flex gap-6 max-[800px]:flex-col ">
+          {data.map((d, i) => (
+            <div
+              className="flex flex-col gap-2 rounded-xl bg-white "
+              key={i + d.title}
+            >
+              <p className="w-full bg-primary p-4 rounded-t-xl font-bold text-white [1035px]:text-2xl text-center">
+                {d.title}
+              </p>
+              <div className="flex flex-col p-4 gap-2">
+                {d.desc.map((text, ind) => (
+                  <div className="flex gap-2 items-center" key={ind + text}>
+                    <div className="h-2 w-2 bg-secondary rounded-full"></div>
+                    <p className="font-poppins font-semibold max-[1035px]:text-sm">
+                      {text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <button className="bg-secondary py-2 px-4 rounded-full font-bold text-white w-[200px] text-lg">
+          More About Us
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default AboutUs;
