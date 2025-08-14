@@ -36,4 +36,6 @@ const stats2:{title:string, percent: number}[] =[
     },
 ]
 
-export {stats, stats2}
+const phone = "0761-8523-398"
+
+export {stats, stats2, phone}
