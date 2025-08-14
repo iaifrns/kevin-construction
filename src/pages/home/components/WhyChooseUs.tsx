@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
       </div>
       <div className="flex-1 border-dotted border-3 border-secondary relative rounded-2xl ">
         <div className="absolute w-full h-full flex justify-center items-center">
-          <div className="bg-[rgb(200,200,200)] p-4 rounded-lg max-[1035px]:w-[60%]">
+          <div className="bg-[rgb(200,200,200)] p-4 rounded-lg max-[1035px]:w-[60%] max-[500px]:w-[90%]">
             <div className="bg-white p-4 min-[1035px]:max-w-[300px]">
               <p className="font-semibold font-poppins text-2xl text-primary">
                 "Excellence isn't a goal — it's our foundation."

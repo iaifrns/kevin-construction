@@ -58,10 +58,10 @@ const AboutUs = () => {
                   </div>
                   <Icon
                     icon={"flowbite:quote-outline"}
-                    className="text-secondary text-[64px]"
+                    className="text-secondary text-[64px] max-[500px]:hidden"
                   />
                 </div>
-                <p className="text-green-800 text-lg font-poppins">
+                <p className="text-green-800 sm:text-lg font-poppins">
                   “Every project is a promise to deliver quality, safety, and
                   satisfaction. Our commitment is as strong as the foundations
                   we lay.”

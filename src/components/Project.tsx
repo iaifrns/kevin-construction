@@ -15,7 +15,7 @@ const Project = ({
   return (
     <div className="flex-1 border-dotted border-3 border-secondary p-6 rounded-2xl">
       <div
-        className="w-full h-[500px] max-[1035px]:w-full max-[1035px]:h-[400px] max-[800px]:h-[300px] bg-cover bg-no-repeat rounded-2xl"
+        className="w-full h-[500px] max-[1035px]:w-full max-[1035px]:h-[400px] max-[800px]:h-[300px] min-[1600px]:h-[600px] bg-cover bg-no-repeat rounded-2xl"
         style={{ backgroundImage: `url(${img})` }}
       >
         <div className={`h-full w-full rounded-2xl ${active && 'bg-[rgb(8,80,85)]/50'} bg-gradient-to-t from-[rgb(8,80,85)]/95  hover:bg-[rgb(8,80,85)]/50 flex flex-col justify-end overflow-hidden`}>
@@ -23,7 +23,7 @@ const Project = ({
             <p className="text-white font-poppins font-semibold max-[800px]:text-[14px] text-xl">
               {title1}
             </p>
-            <p className="text-white font-poppins font-bold text-[32px] max-[800px]:text-2xl">
+            <p className="text-white font-poppins font-bold text-[36px] max-[800px]:text-2xl">
               {title2}
             </p>
             <p className="text-gray-300 text-lg max-[800px]:text-sm">{desc}</p>

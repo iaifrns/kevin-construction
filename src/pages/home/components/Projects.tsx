@@ -12,7 +12,7 @@ const Projects = () => {
         Cras tincidunt risus el vitae tortor aliquet, nec tincidunt felis biben
         dum mentum. Aliquam elemen tum vitaem commodo, et congue.
       </p>
-      <div className="mt-6 flex justify-between w-full gap-4 max-[1035px]:flex-col">
+      <div className="mt-6 flex justify-between w-full gap-6 max-[1035px]:flex-col min-[1500px]:w-[80%]">
         <Project
           img={images.ABOUT1}
           title1="Residential Construction"

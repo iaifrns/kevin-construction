@@ -10,6 +10,7 @@ import Statistiques from "./components/Statistiques";
 import WhatWeDo from "./components/WhatWeDo";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Projects from "./components/Projects";
+import Testimonies from "./components/Testimonies";
 
 const HomePage = () => {
   return (
@@ -53,6 +54,9 @@ const HomePage = () => {
       </div>
       <div className="px-8 py-16 flex flex-col items-center justify-center bg-white bg-fixed gap-8" style={{backgroundImage: `url(${images.BG1})`}}>
         <Projects />
+      </div>
+      <div className="w-full px-8 py-16 bg-[rgb(220,220,220)] flex flex-col items-center gap-6">
+        <Testimonies />
       </div>
     </div>
   );

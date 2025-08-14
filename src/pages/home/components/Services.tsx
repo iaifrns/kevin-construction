@@ -13,7 +13,7 @@ const ServiceInfo = ({
   return (
     <div className="flex px-2 flex-1 flex-col items-center justify-center gap-3">
       <Icon icon={icon} className="text-white text-[64px]" />
-      <p className="font-bold font-poppins text-white text-2xl">{title}</p>
+      <p className="font-bold font-poppins text-white text-2xl text-center">{title}</p>
       <p className="text-center text-white">{desc}</p>
     </div>
   );
