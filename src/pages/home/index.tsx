@@ -47,20 +47,29 @@ const HomePage = () => {
         <Services />
         <AboutUs />
       </div>
-      <div className="px-8 py-24 flex flex-col items-center justify-center bg-white bg-fixed gap-8" style={{backgroundImage: `url(${images.BG1})`}}>
+      <div
+        className="px-8 py-24 flex flex-col items-center justify-center bg-white bg-fixed gap-8"
+        style={{ backgroundImage: `url(${images.BG1})` }}
+      >
         <HeaderSection />
-        <WhatWeDo/>
+        <WhatWeDo />
       </div>
       <div className="w-full px-8 py-16 bg-[rgb(220,220,220)] flex flex-col items-center gap-6">
         <WhyChooseUs />
       </div>
-      <div className="px-8 py-16 flex flex-col items-center justify-center bg-white bg-fixed gap-8" style={{backgroundImage: `url(${images.BG1})`}}>
+      <div
+        className="px-8 py-16 flex flex-col items-center justify-center bg-white bg-fixed gap-8"
+        style={{ backgroundImage: `url(${images.BG1})` }}
+      >
         <Projects />
       </div>
       <div className="w-full px-8 py-16 bg-[rgb(220,220,220)] flex flex-col items-center gap-6">
         <Testimonies />
       </div>
-      <div className="px-8 py-16 flex flex-col items-center justify-center bg-white bg-fixed gap-8" style={{backgroundImage: `url(${images.BG1})`}}>
+      <div
+        className="px-8 py-16 flex flex-col items-center justify-center bg-white bg-fixed gap-8"
+        style={{ backgroundImage: `url(${images.BG1})` }}
+      >
         <FAQ />
       </div>
       <Footer />
