@@ -37,5 +37,8 @@ const stats2:{title:string, percent: number}[] =[
 ]
 
 const phone = "0761-8523-398"
+const email = "hello@domainsite.com"
+const webpage = "www.domainsite.com"
+const location = "KLLG st, No.99, Pku City, ID 28289"
 
-export {stats, stats2, phone}
+export {stats, stats2, phone, email, webpage, location}

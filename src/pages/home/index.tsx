@@ -12,6 +12,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import Projects from "./components/Projects";
 import Testimonies from "./components/Testimonies";
 import FAQ from "./components/FAQ";
+import Footer from "../../components/Footer";
 
 const HomePage = () => {
   return (
@@ -62,6 +63,7 @@ const HomePage = () => {
       <div className="px-8 py-16 flex flex-col items-center justify-center bg-white bg-fixed gap-8" style={{backgroundImage: `url(${images.BG1})`}}>
         <FAQ />
       </div>
+      <Footer />
     </div>
   );
 };
