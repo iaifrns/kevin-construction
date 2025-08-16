@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <p className="font-poppins text-gray-600 font-bold text-xl">PROJECTS</p>
-      <p className="font-poppins text-titletext font-bold text-[48px] max-[800px]:text-3xl max-[800px]:text-center">
+      <p className="font-poppins text-titletext font-bold max-[1035px]:text-[40px] text-[48px] max-[800px]:text-3xl max-[800px]:text-center">
         Proven Results Across Every Site
       </p>
       <p className="text-subtext text-center min-[1035px]:w-[50%] ">

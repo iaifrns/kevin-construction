@@ -8,6 +8,7 @@ import HeaderSection from "../home/components/HeaderSection";
 import Projects from "../home/components/Projects";
 import WhatWeDo from "../home/components/WhatWeDo";
 import WhyChooseUs from "../home/components/WhyChooseUs";
+import MiniGallery from "./components/MiniGallery";
 
 const ServicePage = () => {
   return (
@@ -30,6 +31,9 @@ const ServicePage = () => {
         style={{ backgroundImage: `url(${images.BG1})` }}
       >
         <Projects />
+      </div>
+      <div className="w-full px-8 py-16 bg-[rgb(220,220,220)] flex flex-col items-center gap-6">
+        <MiniGallery />
       </div>
       <Footer />
     </div>

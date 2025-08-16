@@ -9,6 +9,7 @@ import TEAM1 from "../assets/Team-Image-1.1.jpg";
 import TEAM2 from "../assets/Team-Image-3.jpg";
 import TEAM3 from "../assets/Team-Image-6.jpg";
 import TEAM4 from "../assets/Team-Image-7.jpg";
+import CONTACTIMG1 from "../assets/Contact-Image-1.jpg";
 
 const images = {
   HEROIMG,
@@ -21,7 +22,8 @@ const images = {
   TEAM1,
   TEAM2,
   TEAM3,
-  TEAM4
+  TEAM4,
+  CONTACTIMG1
 };
 
 export { images };
