@@ -1,15 +1,17 @@
+import { email, location, webpage } from "./data"
+
 const enterpriseInfo: {icons: string, text: string}[] = [
     {
         icons: "material-symbols-light:mail-outline",
-        text: "hello@domainsite.com"
+        text: email
     },
     {
         icons: "ei:location",
-        text: "KLLG st, No.99, Pku City, ID 28289"
+        text: location
     },
     {
         icons: "streamline-plump:web",
-        text: "www.domainsite.com"
+        text: webpage
     }
 ]
 

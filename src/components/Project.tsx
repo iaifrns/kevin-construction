@@ -18,7 +18,7 @@ const Project = ({
         className="w-full h-[500px] max-[1035px]:w-full max-[1035px]:h-[400px] max-[800px]:h-[300px] min-[1600px]:h-[600px] bg-cover bg-no-repeat rounded-2xl"
         style={{ backgroundImage: `url(${img})` }}
       >
-        <div className={`h-full w-full rounded-2xl ${active && 'bg-[rgb(8,80,85)]/50'} bg-gradient-to-t from-[rgb(8,80,85)]/95  hover:bg-[rgb(8,80,85)]/50 flex flex-col justify-end overflow-hidden`}>
+        <div className={`h-full w-full rounded-2xl ${active && 'bg-primary/50'} bg-gradient-to-t from-primary/95  hover:bg-primary/50 flex flex-col justify-end overflow-hidden`}>
           <div className={`flex w-full h-fit p-4 flex-col ${!active && 'translate-y-28'} max-[1035px]:translate-0 hover:translate-0 transition-all duration-500 ease-out`}>
             <p className="text-white font-poppins font-semibold max-[800px]:text-[14px] text-xl">
               {title1}

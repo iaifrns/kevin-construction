@@ -33,7 +33,7 @@ const Testimony = ({
             className="text-secondary text-[64px] max-[600px]:hidden"
           />
         </div>
-        <p className="text-green-900 text-lg font-poppins italic">"{message}"</p>
+        <p className="text-primary text-lg font-poppins italic">"{message}"</p>
       </div>
     </div>
   );

@@ -36,9 +36,10 @@ const stats2:{title:string, percent: number}[] =[
     },
 ]
 
-const phone = "0761-8523-398"
-const email = "hello@domainsite.com"
+const phone = "+237 695890377 / 652569078 / 699784798"
+const phone1 = "+237 695890377"
+const email = "contact@groupebeauxservices.org"
 const webpage = "www.domainsite.com"
-const location = "KLLG st, No.99, Pku City, ID 28289"
+const location = " YAOUNDE -  CAMEROUN"
 
-export {stats, stats2, phone, email, webpage, location}
+export {stats, stats2, phone, email, webpage, location, phone1}

@@ -1,5 +1,7 @@
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
 import { images } from "../../../constants/images";
+import { links } from "../../../constants/links";
+import { useNavigate } from "react-router-dom";
 
 const data: { title: string; desc: string[] }[] = [
   {
@@ -23,6 +25,8 @@ const data: { title: string; desc: string[] }[] = [
 ];
 
 const AboutUs = () => {
+  const navigateTo = useNavigate();
+
   return (
     <div className="flex justify-center w-[85%] items-center gap-6 max-[1035px]:flex-col max-[800px]:gap-6 max-[1035px]:gap-28 max-[1035px]:w-full h-fit">
       <div className="relative flex-1 max-md:w-full ">
@@ -61,7 +65,7 @@ const AboutUs = () => {
                     className="text-secondary text-[64px] max-[500px]:hidden"
                   />
                 </div>
-                <p className="text-green-800 sm:text-lg font-poppins">
+                <p className="text-primary sm:text-lg font-poppins">
                   “Every project is a promise to deliver quality, safety, and
                   satisfaction. Our commitment is as strong as the foundations
                   we lay.”
@@ -107,7 +111,10 @@ const AboutUs = () => {
             </div>
           ))}
         </div>
-        <button className="bg-secondary py-2 px-4 rounded-full font-bold text-white w-[200px] text-lg">
+        <button
+          className="bg-secondary py-2 px-4 rounded-full font-bold text-white w-[200px] text-lg"
+          onClick={() => navigateTo(links.about)}
+        >
           More About Us
         </button>
       </div>

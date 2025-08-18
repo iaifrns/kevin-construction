@@ -13,8 +13,11 @@ import Projects from "./components/Projects";
 import Testimonies from "./components/Testimonies";
 import FAQ from "./components/FAQ";
 import Footer from "../../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigateTo = useNavigate();
+
   return (
     <div className="m-0 p-0 flex flex-col w-full">
       <TopMenu />
@@ -33,10 +36,16 @@ const HomePage = () => {
               Class aptent taciti sociosqu.
             </p>
             <div className="flex gap-4 items-center">
-              <button className="px-6 py-3 bg-secondary hover:bg-primary rounded-xl font-bold text-white">
+              <button
+                className="px-6 py-3 bg-secondary hover:bg-primary rounded-xl font-bold text-white"
+                onClick={() => navigateTo(links.service)}
+              >
                 Our Services
               </button>
-              <button className="px-6 py-3 hover:bg-secondary bg-primary rounded-xl  font-bold text-white">
+              <button
+                className="px-6 py-3 hover:bg-secondary bg-primary rounded-xl  font-bold text-white"
+                onClick={() => navigateTo(links.contact)}
+              >
                 Contact Us
               </button>
             </div>

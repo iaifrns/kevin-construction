@@ -4,6 +4,7 @@ import { menu } from "../constants/menu";
 import { useNavigate } from "react-router-dom";
 import { services } from "../constants/services";
 import { email, location, phone, webpage } from "../constants/data";
+import { images } from "../constants/images";
 
 const data: { icon: string; title: string; info: string }[] = [
   {
@@ -31,16 +32,13 @@ const data: { icon: string; title: string; info: string }[] = [
 const Footer = () => {
   const navigateTo = useNavigate();
   return (
-    <div className="p-16 bg-primary flex flex-col gap-10 ">
+    <div className="md:p-16 max-md:p-8 bg-primary flex flex-col gap-10 ">
       <div className="w-full h-full flex justify-between max-[1035px]:flex-col max-[1035px]:gap-6">
-        <div className="flex flex-col gap-3 w-[400px]">
+        <div className="flex flex-col gap-3 md:w-[400px] max-md:w-full">
           <div className="flex gap-2 items-center">
-            <Icon
-              icon={"hugeicons:block-game"}
-              className="text-secondary text-[52px]"
-            />
-            <p className="font-poppins font-bold text-white text-[56px]">
-              Grount
+            <img src={images.LOGO} alt={images.LOGO} className="w-[52px]" />
+            <p className="font-poppins font-bold text-white text-[44px] max-[500px]:text-3xl">
+              G.B.S GROUPE
             </p>
           </div>
           <p className="text-gray-300">
@@ -131,10 +129,10 @@ const Footer = () => {
                   className="text-secondary text-lg text-[40px]"
                 />
                 <div className="flex flex-col ">
-                  <p className="text-white font-bold font-poppins text-xl">
+                  <p className="text-white font-bold font-poppins md:text-xl">
                     {d.title}
                   </p>
-                  <p className="text-white font-poppins text-lg">{d.info}</p>
+                  <p className="text-white font-poppins md:text-lg max-md:text-sm">{d.info}</p>
                 </div>
               </div>
             ))}
