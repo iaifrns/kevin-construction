@@ -7,19 +7,19 @@ const data: { title: string; desc: string[] }[] = [
   {
     title: "Vision",
     desc: [
-      "Build with Purpose",
-      "Become a Regional Leader",
-      "Innovate Construction Methods",
-      "Promote Sustainable Development",
+      "Construire avec un sens et une finalité",
+      "Devenir un leader régional du BTP",
+      "Innover dans les méthodes de construction",
+      "Promouvoir un développement durable",
     ],
   },
   {
     title: "Mission",
     desc: [
-      "Deliver Quality on Every Project",
-      "Prioritize Client Satisfaction",
-      "Empower Our Team",
-      "Build Relationships & Structures",
+      "Assurer la qualité sur chaque projet",
+      "Placer la satisfaction client au premier plan",
+      "Valoriser et former notre équipe",
+      "Bâtir des structures et des relations durables",
     ],
   },
 ];
@@ -54,8 +54,8 @@ const AboutUs = () => {
                       className="w-15 h-15 rounded-full"
                     />
                     <div className="flex flex-col">
-                      <p className="font-bold font-poppins text-xl">
-                        John Patterson
+                      <p className="font-bold font-poppins">
+                        M. ESSOUMBA LIKAM Jean
                       </p>
                       <p className="text-subtext font-poppins">Founder & CEO</p>
                     </div>
@@ -66,9 +66,9 @@ const AboutUs = () => {
                   />
                 </div>
                 <p className="text-primary sm:text-lg font-poppins">
-                  “Every project is a promise to deliver quality, safety, and
-                  satisfaction. Our commitment is as strong as the foundations
-                  we lay.”
+                  “Notre force réside dans notre équipe d’ingénieurs, de
+                  techniciens et d’ouvriers qualifiés, mais aussi dans la
+                  confiance que nos clients nous accordent.”
                 </p>
               </div>
             </div>
@@ -77,17 +77,19 @@ const AboutUs = () => {
       </div>
       <div className="flex-1 flex flex-col gap-4 max-[800px]:w-[95%] max-[1035px]:justify-center">
         <p className="text-[rgb(95,95,95)] font-bold font-poppins [1035px]:text-sm">
-          ABOUT US
+          À propos
         </p>
         <p className="text-titletext font-poppins text-3xl min-[800px]:text-[52px] font-semibold">
-          Crafting Structures, <br />
-          Creating Relationships
+          Construire des structures, <br />
+          Créer des relations
         </p>
         <p className="font-poppins text-[rgb(100,100,100)] max-[1025px]:text-sm max-[800px]:w-[80%]">
-          Pellen tesque ornare libero ac lectus efficitur dapibus. Cras
-          tincidunt risus el vitae tortor aliquet, nec tincidunt felis bibendum.
-          Aliquam elemen tum vitaem commodo, et congue mi commodo quam sit amet
-          congue.
+          Le Groupe Beaux Services (G.B.S.) est une entreprise camerounaise
+          spécialisée dans le Bâtiment et les Travaux Publics (BTP). Depuis plus
+          de 15 ans, nous mettons notre expertise au service de la conception,
+          de l’étude et de la réalisation d’ouvrages de génie civil, allant des
+          bâtiments neufs aux rénovations, en passant par les infrastructures
+          modernes.
         </p>
         <div className="w-full flex gap-6 max-[800px]:flex-col ">
           {data.map((d, i) => (
@@ -115,7 +117,7 @@ const AboutUs = () => {
           className="bg-secondary py-2 px-4 rounded-full font-bold text-white w-[200px] text-lg"
           onClick={() => navigateTo(links.about)}
         >
-          More About Us
+          Plus
         </button>
       </div>
     </div>

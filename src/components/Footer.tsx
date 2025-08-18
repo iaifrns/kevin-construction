@@ -42,8 +42,9 @@ const Footer = () => {
             </p>
           </div>
           <p className="text-gray-300">
-            Duis rhoncus vehicula mi eget tempor proin. sit amet tincidunt
-            lacus. Pellen tesque pretra felis non elit elementum viverra.
+            Groupe Beaux Services (G.B.S.) est une entreprise camerounaise de
+            Bâtiments et Travaux Publics (BTP) spécialisée dans la conception,
+            l’étude et la réalisation d’ouvrages de génie civi
           </p>
           <div className="flex gap-3 items-center">
             {media.map((med, ind) => (
@@ -132,7 +133,9 @@ const Footer = () => {
                   <p className="text-white font-bold font-poppins md:text-xl">
                     {d.title}
                   </p>
-                  <p className="text-white font-poppins md:text-lg max-md:text-sm">{d.info}</p>
+                  <p className="text-white font-poppins md:text-lg max-md:text-sm">
+                    {d.info}
+                  </p>
                 </div>
               </div>
             ))}
@@ -148,4 +151,4 @@ const Footer = () => {
 };
 
 export default Footer;
-export {data as contactFullInfo}
+export { data as contactFullInfo };

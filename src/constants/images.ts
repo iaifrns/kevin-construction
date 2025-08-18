@@ -1,4 +1,4 @@
-import HEROIMG from "../assets/Hero-Image-1536x720.jpg";
+import HEROIMG from "../assets/IMG-20210913-WA0028.jpg";
 import ABOUT1 from "../assets/About-Us-Image-1.jpg";
 import ABOUT2 from "../assets/About-Us-Image-2.jpg";
 import BG1 from "../assets/background construction.png";

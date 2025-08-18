@@ -1,24 +1,24 @@
-const services:{icon:string, title: string, desc: string}[] = [
-    {
-        icon: "qlementine-icons:build-16",
-        title: "Superior Build Quality",
-        desc: "Morbi lorem arcu, maximus in commodo in, vehicula quis leo nullam lacus risus."
-    },
-    {
-        icon: "material-symbols:avg-time-outline",
-        title: "Decades of Experience",
-        desc: "Morbi lorem arcu, maximus in commodo in, vehicula quis leo nullam lacus risus."
-    },
-    {
-        icon: "streamline-sharp:drawing-compass",
-        title: "On-Time & On-Budget",
-        desc: "Morbi lorem arcu, maximus in commodo in, vehicula quis leo nullam lacus risus."
-    },
-    {
-        icon: "streamline-ultimate:design-drawing-board",
-        title: "On-Time & On-Budget",
-        desc: "Morbi lorem arcu, maximus in commodo in, vehicula quis leo nullam lacus risus."
-    },
-]
+const services: { icon: string; title: string; desc: string }[] = [
+  {
+    icon: "qlementine-icons:build-16",
+    title: "Conception & Études",
+    desc: "Plans architecturaux, calculs de structures et levés topographiques pour des projets fiables.",
+  },
+  {
+    icon: "material-symbols:avg-time-outline",
+    title: "Génie Civil & Gros Œuvre",
+    desc: "Terrassements, maçonnerie, charpente et travaux de construction de bâtiments neufs ou rénovés.",
+  },
+  {
+    icon: "streamline-sharp:drawing-compass",
+    title: "Menuiserie & Finitions",
+    desc: "Travaux de menuiserie bois et aluminium, carrelage, peinture, étanchéité et décoration.",
+  },
+  {
+    icon: "streamline-ultimate:design-drawing-board",
+    title: "Lots Techniques",
+    desc: "Électricité, plomberie, contrôle d’accès, vidéosurveillance et solutions domotiques modernes.",
+  },
+];
 
-export {services}
+export { services };

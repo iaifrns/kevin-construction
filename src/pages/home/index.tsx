@@ -25,28 +25,29 @@ const HomePage = () => {
       <div className="w-full px-8 py-8 bg-[rgb(220,220,220)] flex flex-col items-center gap-6 pb-32">
         <div className="flex items-center w-full gap-8 py-4 max-[1035px]:flex-col">
           <span className="font-bold font-poppins text-[58px] flex-1 text-titletext text-start w-full max-[700px]:text-[28px]">
-            Expert Construction.
-            <br /> Impeccable Results.
+            Construction experte.
+            <br /> Résultats impeccables.
           </span>
           <div className="flex flex-col flex-1 gap-4">
             <p className="text-subtext  max-[700px]:text-sm">
-              Fusce mattis justo sit amet nunc mattis sollici tudin. Praesent
-              mauris urna felis, feugiat vitae male suada a, scele risque sit
-              amet augue. Donec dapibus metus non odio vesti bulum laoreet.
-              Class aptent taciti sociosqu.
+              Groupe Beaux Services (G.B.S.) est une entreprise camerounaise de
+              Bâtiments et Travaux Publics (BTP) spécialisée dans la conception,
+              l’étude et la réalisation d’ouvrages de génie civil. Son siège
+              social est basé à Yaoundé (Ahala), avec une direction technique à
+              Douala.
             </p>
             <div className="flex gap-4 items-center">
               <button
                 className="px-6 py-3 bg-secondary hover:bg-primary rounded-xl font-bold text-white"
                 onClick={() => navigateTo(links.service)}
               >
-                Our Services
+                Nos Services
               </button>
               <button
                 className="px-6 py-3 hover:bg-secondary bg-primary rounded-xl  font-bold text-white"
                 onClick={() => navigateTo(links.contact)}
               >
-                Contact Us
+                Contactez-nous
               </button>
             </div>
           </div>

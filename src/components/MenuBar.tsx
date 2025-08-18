@@ -42,7 +42,7 @@ const MenuBar = ({ active }: { active: string }) => {
         />
         <div className="flex flex-col">
           <p className="text-white text-[28px] font-semibold font-poppins">
-            Call Us
+            Contact
           </p>
           <p className="text-white font-semibold">{phone1}</p>
         </div>
