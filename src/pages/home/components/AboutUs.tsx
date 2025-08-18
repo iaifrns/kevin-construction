@@ -34,12 +34,12 @@ const AboutUs = () => {
           <img
             src={images.ABOUT1}
             alt={images.ABOUT1}
-            className="object-cover w-full h-full rounded-2xl max-[800px]:h-[450px]"
+            className="object-cover w-full h-full min-[1035px]:h-[550px] rounded-2xl max-[800px]:h-[450px]"
           />
           <img
             src={images.ABOUT2}
             alt={images.ABOUT2}
-            className="object-cover w-full h-full rounded-2xl max-[800px]:h-[450px]"
+            className="object-cover w-full h-full rounded-2xl min-[1035px]:h-[550px] max-[800px]:h-[450px]"
           />
         </div>
         <div className="block max-[800px]:mt-4 min-[800px]:absolute w-full min-[800px]:-bottom-15">

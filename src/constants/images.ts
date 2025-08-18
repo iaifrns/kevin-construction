@@ -1,9 +1,9 @@
 import HEROIMG from "../assets/IMG-20210913-WA0028.jpg";
-import ABOUT1 from "../assets/About-Us-Image-1.jpg";
-import ABOUT2 from "../assets/About-Us-Image-2.jpg";
+import ABOUT1 from "../assets/IMG_20211204_133427_613.jpg";
+import ABOUT2 from "../assets/SAM_2154.jpg";
 import BG1 from "../assets/background construction.png";
 import WHYUS1 from "../assets/Why-Choose-Us-Image-5.jpg";
-import WHYUS2 from "../assets/Why-Choose-Us-Image-6.jpg";
+import WHYUS2 from "../assets/WhatsApp Image 2025-04-18 at 15.11.42.jpeg";
 import SERVICEIMG1 from "../assets/Service-Image-3.jpg";
 import TEAM1 from "../assets/Team-Image-1.1.jpg";
 import TEAM2 from "../assets/Team-Image-3.jpg";
