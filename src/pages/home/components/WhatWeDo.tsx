@@ -9,9 +9,9 @@ const WhatWeDo = () => {
 
   return (
     <div className="w-[80%] flex flex-col justify-center items-center mt-4">
-      <p className="text-subtext font-poppins text-lg font-bold">WHAT WE DO</p>
+      <p className="text-subtext font-poppins text-lg font-bold">CE QUE NOUS FAISONS</p>
       <p className="font-bold text-titletext font-poppins text-[56px] max-[800px]:text-3xl">
-        Expert Solutions for Every Project
+        Des Solutions Expertes Pour Chaque Projet
       </p>
       <p className="min-[1035px]:w-[50%] text-center text-subtext">
         Cras tincidunt risus el vitae tortor aliquet, nec tincidunt felis biben

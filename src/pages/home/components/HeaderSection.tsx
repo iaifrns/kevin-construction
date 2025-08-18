@@ -11,21 +11,20 @@ const HeaderSection = () => {
     >
       <div className="w-full h-full px-8 py-12 rounded-2xl bg-primary/80 flex flex-col gap-4">
         <p className="text-white font-poppins font-bold max-[800px]:text-[42px] max-[400px]:text-[32px] text-[56px]">
-          Turn Your Dream Project into Reality
+          Transformez votre projet de rêve en réalité
         </p>
         <p className="text-2xl font-semibold text-white font-poppins max-[800px]:text-xl">
-          Talk to Our Construction Team Now.
+          Parlez dès maintenant à notre équipe de construction.
         </p>
         <p className="text-gray-200 text-lg min-[1400px]:w-[40%]">
-          Vesti bulum nec velit ut diam elementum conse quat nec non dui. Vesti
-          bulum vel ullam corper leo. Phasellus imperdiet diam a odio mollis
-          condi mentum. Quisque id dictum tortor.
+          Nos ingénieurs et techniciens qualifiés sont à votre écoute pour
+          étudier vos besoins et vous proposer des solutions sur mesure.
         </p>
         <button
           className="bg-secondary text-white font-bold font-poppins px-8 py-3 rounded-4xl w-fit text-lg"
           onClick={() => navigateTo(links.contact)}
         >
-          Contact Us Today
+          Contactez-Nous Dès Aujourd’hui
         </button>
       </div>
     </div>
