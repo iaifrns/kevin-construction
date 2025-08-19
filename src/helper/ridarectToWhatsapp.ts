@@ -1,0 +1,5 @@
+const ridarectToWhatsapp = () => {
+
+}
+
+export {ridarectToWhatsapp}
