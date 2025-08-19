@@ -144,7 +144,7 @@ const Footer = () => {
       </div>
       <div className="w-full border-dotted border-t-3 border-secondary"></div>
       <p className="w-full text-center text-white text-lg font-poppins font-bold">
-        Copyright © 2025 Krakenbox. Tous droits réservés.
+        Copyright © 2025 KEV DEV. Tous droits réservés.
       </p>
     </div>
   );
