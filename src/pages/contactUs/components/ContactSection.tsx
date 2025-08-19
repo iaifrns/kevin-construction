@@ -1,6 +1,7 @@
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
 import { contactFullInfo } from "../../../components/Footer";
 import { images } from "../../../constants/images";
+import { ridarectToWhatsapp } from "../../../helper/ridarectToWhatsapp";
 
 const CustomInput = ({
   type,
@@ -58,7 +59,10 @@ const ContactSection = () => {
             biben dum mentum. Aliquam elemen tum vitaem commodo, et congue.
           </p>
         </div>
-        <button className="p-4 bg-green-900 rounded-2xl flex gap-2 items-center justify-center">
+        <button
+          className="p-4 bg-green-900 rounded-2xl flex gap-2 items-center justify-center"
+          onClick={ridarectToWhatsapp}
+        >
           <Icon
             icon={"mingcute:whatsapp-line"}
             className="text-white text-[24px]"

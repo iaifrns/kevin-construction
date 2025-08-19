@@ -3,6 +3,7 @@ import Question from "../../../components/Question";
 import { phone } from "../../../constants/data";
 import { faq } from "../../../constants/faq";
 import { images } from "../../../constants/images";
+import { ridarectToWhatsapp } from "../../../helper/ridarectToWhatsapp";
 
 const FAQ = () => {
   const [isdrop, setIsdrop] = useState(0);
@@ -27,7 +28,10 @@ const FAQ = () => {
           <button className="bg-secondary hover:bg-primary transition-all duration-300 ease-in-out font-poppins p-4 rounded-full text-white font-semibold">
             Submit Message
           </button>
-          <button className="bg-green-900 hover:bg-primary transition-all duration-300 ease-in-out font-poppins  p-4 rounded-full text-white font-semibold">
+          <button
+            className="bg-green-900 hover:bg-primary transition-all duration-300 ease-in-out font-poppins  p-4 rounded-full text-white font-semibold"
+            onClick={ridarectToWhatsapp}
+          >
             Whatsapp
           </button>
         </div>
