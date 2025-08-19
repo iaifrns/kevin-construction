@@ -15,7 +15,7 @@ const ServicePage = () => {
     <div className="m-0 p-0 flex flex-col w-full">
       <TopMenu />
       <MenuBar active={links.service} />
-      <Header title="Services" page="Services" />
+      <Header title="Services" page="Services" img={images.IMG3} />
       <div
         className="px-8 py-24 flex flex-col items-center justify-center bg-white bg-fixed gap-8"
         style={{ backgroundImage: `url(${images.BG1})` }}

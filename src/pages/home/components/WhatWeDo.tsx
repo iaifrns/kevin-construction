@@ -39,7 +39,7 @@ const WhatWeDo = () => {
           <img
             src={images.SERVICEIMG1}
             alt={images.SERVICEIMG1}
-            className="rounded-2xl h-full object-cover"
+            className="rounded-2xl h-full object-cover max-w-[400px]"
           />
           <button
             className="bg-secondary hover:bg-primary rounded-4xl font-poppins p-4 text-white font-semibold"
