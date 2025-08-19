@@ -9,22 +9,22 @@ import { images } from "../constants/images";
 const data: { icon: string; title: string; info: string }[] = [
   {
     icon: "tabler:phone-call",
-    title: "Phone Number",
+    title: "Numéro de Téléphone",
     info: phone,
   },
   {
     icon: "mdi:email-outline",
-    title: "Email Address",
+    title: "Adresse E-mail",
     info: email,
   },
   {
     icon: "pepicons-pencil:internet",
-    title: "Website",
+    title: "Site Web",
     info: webpage,
   },
   {
     icon: "hugeicons:location-04",
-    title: "Office Address",
+    title: "Adresse du Bureau",
     info: location,
   },
 ];
@@ -144,7 +144,7 @@ const Footer = () => {
       </div>
       <div className="w-full border-dotted border-t-3 border-secondary"></div>
       <p className="w-full text-center text-white text-lg font-poppins font-bold">
-        Copyright © 2025 Krakenbox. All Rights Reserved.
+        Copyright © 2025 Krakenbox. Tous droits réservés.
       </p>
     </div>
   );
