@@ -10,13 +10,13 @@ const menu:{text:string, link: string}[] = [
     link: links.about
 },
 {
+    text: "Services",
+    link: links.service
+},
+{
     text: "Contact",
     link: links.contact
 },
-{
-    text: "Services",
-    link: links.service
-}
 ]
 
 export {menu}

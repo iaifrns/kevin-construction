@@ -9,6 +9,7 @@ import Projects from "../home/components/Projects";
 import WhatWeDo from "../home/components/WhatWeDo";
 import WhyChooseUs from "../home/components/WhyChooseUs";
 import MiniGallery from "./components/MiniGallery";
+import Sector from "./components/Sector";
 
 const ServicePage = () => {
   return (
@@ -34,6 +35,12 @@ const ServicePage = () => {
       </div>
       <div className="w-full px-8 py-16 bg-[rgb(220,220,220)] flex flex-col items-center gap-6">
         <MiniGallery />
+      </div>
+      <div
+        className="px-8 py-16 flex flex-col items-center justify-center bg-white bg-fixed gap-8"
+        style={{ backgroundImage: `url(${images.BG1})` }}
+      >
+        <Sector />
       </div>
       <Footer />
     </div>

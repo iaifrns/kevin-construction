@@ -4,7 +4,7 @@ import { images } from "../../../constants/images";
 
 const WhyChooseUs = () => {
   return (
-    <div className="flex w-full gap-8 max-[1035px]:flex-col">
+    <div className="w-[95%] flex max-[1035px]:w-full gap-8 max-[1035px]:flex-col">
       <div className="flex-1 flex flex-col justify-evenly max-[1035px]:gap-4">
         <p className="text-gray-600 text-xl font-bold font-poppins">
           POURQUOI NOUS CHOISIR
