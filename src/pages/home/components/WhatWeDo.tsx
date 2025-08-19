@@ -8,22 +8,22 @@ const WhatWeDo = () => {
   const navigateTo = useNavigate();
 
   return (
-    <div className="w-[80%] flex flex-col justify-center items-center mt-4">
+    <div className="w-[80%] max-[1035px]:w-full flex flex-col justify-center items-center mt-4">
       <p className="text-subtext font-poppins text-lg font-bold">
         CE QUE NOUS FAISONS
       </p>
-      <p className="font-bold text-titletext font-poppins text-[50px] max-[800px]:text-3xl text-center">
+      <p className="font-bold text-titletext font-poppins text-[50px] max-[800px]:text-2xl text-center">
         Des Solutions Expertes Pour Chaque Projet
       </p>
-      <p className="min-[1035px]:w-[70%] text-center text-subtext">
+      <p className="min-[1035px]:w-[70%] text-center text-subtext max-[500px]:text-sm">
         Du gros œuvre aux finitions, nous mettons à votre disposition une équipe
         d’ingénieurs, de techniciens et d’ouvriers qualifiés pour garantir des
         réalisations durables, précises et adaptées à vos besoins. Chaque projet
         est unique, et nous vous apportons la solution sur mesure qui répond à
         vos attentes.
       </p>
-      <div className="mt-8 flex gap-6 max-[1035px]:flex-col">
-        <div className="flex flex-col justify-between gap-4 max-[1035px]:flex-col">
+      <div className="mt-8 flex gap-6 max-[1035px]:flex-col w-full">
+        <div className="flex flex-col justify-between gap-4 max-[1035px]:flex-col w-full">
           <Service
             icon={services[0].icon}
             title={services[0].title}
@@ -48,7 +48,7 @@ const WhatWeDo = () => {
             View All Services
           </button>
         </div>
-        <div className="flex flex-col justify-between max-[1035px]:flex-col gap-4">
+        <div className="flex flex-col justify-between max-[1035px]:flex-col gap-4 w-full">
           <Service
             icon={services[2].icon}
             title={services[2].title}
