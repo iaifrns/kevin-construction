@@ -38,7 +38,7 @@ const FAQ = () => {
           >
             <div className="p-8 h-full w-full bg-primary/80 rounded-2xl flex justify-center items-center flex-col">
               <p className="font-semibold min-[500px]:text-2xl font-poppins text-white">
-                Need More Help? Contact Us
+                Besoin d’aide supplémentaire ? Contactez-nous
               </p>
               <div className="flex items-center gap-2">
                 <svg
@@ -74,12 +74,13 @@ const FAQ = () => {
             FAQ
           </p>
           <p className="font-poppins font-bold text-titletext max-[500px]:text-4xl text-[56px]">
-            Start With Confidence
+            Commencez en Toute Confiance
           </p>
           <p className="min-[500px]:text-lg text-subtext">
-            Duis finibus aliquam erat, sed placerat nisl consec tetur elemen
-            tum. Cras ac dapibus elit. In dolor am magna, imper diet sed varius
-            in, accumsan id dui. Vivamus faucibus odio at faucibus congue.
+            Avec plus de 15 ans d’expérience dans le BTP, nous vous accompagnons
+            à chaque étape de votre projet. De la conception à la livraison,
+            notre priorité est de vous offrir transparence, qualité et respect
+            des délais.
           </p>
         </div>
         <div className="w-full h-full justify-between">

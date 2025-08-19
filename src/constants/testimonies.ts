@@ -8,38 +8,38 @@ const testimonies: {
 }[] = [
   {
     img: images.WHYUS1,
-    name: "Sarah Thompson",
-    title: "Office Manager",
+    name: "Aminata Diallo",
+    title: "Responsable Administratif",
     message:
-      "From day one, the team was professional, transparent, and efficient. Our new office building was completed ahead of schedule.",
+      "Dès le premier jour, l’équipe a fait preuve de professionnalisme et de transparence. Nos nouveaux bureaux ont été livrés avant le délai prévu.",
   },
   {
     img: images.WHYUS2,
-    name: "Mark Rivera",
-    title: "Homeowner",
+    name: "Jean-Baptiste Mba",
+    title: "Propriétaire de maison",
     message:
-      "I couldn’t be happier with the results of our home renovation. Every detail was handled with care, and the crew was respectful.",
+      "Je suis très satisfait du résultat de la rénovation de ma maison. Chaque détail a été soigneusement traité et l’équipe a travaillé avec respect.",
   },
   {
     img: images.WHYUS1,
-    name: "Dr. Linda Park",
-    title: "Director",
+    name: "Dr. Aïcha N’Goma",
+    title: "Directrice de clinique",
     message:
-      "They understood our facility’s complex healthcare requirements and delivered a top-tier medical center that meets all regulatory standards.",
+      "Ils ont compris les besoins complexes de notre structure de santé et ont livré un centre médical moderne conforme aux normes en vigueur.",
   },
   {
     img: images.WHYUS2,
-    name: "Jason Wu",
-    title: "CEO",
+    name: "Moussa Kouyaté",
+    title: "PDG",
     message:
-      "Professional, reliable, and highly skilled — the team exceeded our expectations at every stage. The final result was flawless.",
+      "Professionnels, fiables et hautement qualifiés — l’équipe a dépassé nos attentes à chaque étape. Le résultat final est impeccable.",
   },
   {
     img: images.WHYUS1,
-    name: "Carlos Ramirez",
-    title: "Logistics Manager",
+    name: "Chinedu Okeke",
+    title: "Responsable Logistique",
     message:
-      "They turned our vision into reality. Our custom home was delivered on time, with beautiful craftsmanship and great attention to detail.",
+      "Ils ont transformé notre vision en réalité. Notre résidence a été livrée à temps, avec un savoir-faire remarquable et une grande attention aux détails.",
   },
 ];
 

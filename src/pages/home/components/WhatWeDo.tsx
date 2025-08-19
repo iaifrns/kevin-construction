@@ -9,13 +9,18 @@ const WhatWeDo = () => {
 
   return (
     <div className="w-[80%] flex flex-col justify-center items-center mt-4">
-      <p className="text-subtext font-poppins text-lg font-bold">CE QUE NOUS FAISONS</p>
-      <p className="font-bold text-titletext font-poppins text-[56px] max-[800px]:text-3xl">
+      <p className="text-subtext font-poppins text-lg font-bold">
+        CE QUE NOUS FAISONS
+      </p>
+      <p className="font-bold text-titletext font-poppins text-[50px] max-[800px]:text-3xl text-center">
         Des Solutions Expertes Pour Chaque Projet
       </p>
-      <p className="min-[1035px]:w-[50%] text-center text-subtext">
-        Cras tincidunt risus el vitae tortor aliquet, nec tincidunt felis biben
-        dum mentum. Aliquam elemen tum vitaem commodo, et congue.
+      <p className="min-[1035px]:w-[70%] text-center text-subtext">
+        Du gros œuvre aux finitions, nous mettons à votre disposition une équipe
+        d’ingénieurs, de techniciens et d’ouvriers qualifiés pour garantir des
+        réalisations durables, précises et adaptées à vos besoins. Chaque projet
+        est unique, et nous vous apportons la solution sur mesure qui répond à
+        vos attentes.
       </p>
       <div className="mt-8 flex gap-6 max-[1035px]:flex-col">
         <div className="flex flex-col justify-between gap-4 max-[1035px]:flex-col">

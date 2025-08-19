@@ -1,23 +1,23 @@
 const faq: { question: string; answ: string }[] = [
   {
-    question: "How long does a typical construction porject take?",
-    answ: "The timeline depends on the project’s size and complexity. Residential builds may take 3–6 months, while commercial or industrial projects can range from 6 months to over a year. We always provide a detailed project schedule before starting.",
+    question: "Combien de temps dure un projet de construction typique ?",
+    answ: "La durée dépend de la taille et de la complexité du projet. Une maison résidentielle peut prendre 3 à 6 mois, tandis qu’un immeuble ou un projet commercial peut aller de 6 mois à plus d’un an. Nous établissons toujours un planning détaillé avant le démarrage.",
   },
   {
-    question: "Do you offer free consultations or quotes?",
-    answ: "Yes, we offer free initial consultations and detailed project quotes. During the consultation, we assess your needs, budget, and timeline to give you a clear and accurate proposal.",
+    question: "Proposez-vous des devis ou consultations gratuits ?",
+    answ: "Oui. Nous offrons une première consultation gratuite ainsi qu’un devis détaillé. Cela nous permet d’évaluer vos besoins, votre budget et vos délais afin de vous présenter une proposition claire et précise.",
   },
   {
-    question: "Are you licensed and insured?",
-    answ: "Absolutely. We are fully licensed, bonded, and insured to ensure your project is protected and meets all local regulations and safety standards.",
+    question: "Êtes-vous certifiés et assurés ?",
+    answ: "Absolument. Le Groupe Beaux Services est dûment enregistré, certifié et assuré afin de garantir que vos projets respectent les normes locales de sécurité et de construction.",
   },
   {
-    question: "Can you help with permits and approvals?",
-    answ: "Absolutely. We are fully licensed, bonded, and insured to ensure your project is protected and meets all local regulations and safety standards.",
+    question: "Pouvez-vous aider pour les permis et autorisations ?",
+    answ: "Oui, nous vous accompagnons dans toutes les démarches administratives nécessaires, y compris l’obtention des permis de construire et les validations techniques, pour que votre projet soit conforme à la réglementation.",
   },
   {
-    question: "What kind of warranty do you offer?",
-    answ: "We provide a standard workmanship warranty on all construction projects. Specific warranties vary by service type and materials used, and we’ll go over them in detail before the project begins.",
+    question: "Offrez-vous une garantie sur vos travaux ?",
+    answ: "Nous offrons une garantie standard sur la qualité de nos réalisations. La durée et les conditions varient selon le type de service et les matériaux utilisés, et elles sont toujours expliquées avant le lancement du projet.",
   },
 ];
 

@@ -55,7 +55,7 @@ const AboutUs = () => {
                     />
                     <div className="flex flex-col">
                       <p className="font-bold font-poppins">
-                        M. ESSOUMBA LIKAM Jean
+                        M. Yogo Essoumba Pierre
                       </p>
                       <p className="text-subtext font-poppins">Founder & CEO</p>
                     </div>

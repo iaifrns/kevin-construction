@@ -2,6 +2,9 @@ import HEROIMG from "../assets/IMG-20210913-WA0028.jpg";
 import ABOUT1 from "../assets/IMG_20211204_133427_613.jpg";
 import ABOUT2 from "../assets/SAM_2154.jpg";
 import BG1 from "../assets/background construction.png";
+import PROJECT1 from "../assets/SAM_0315.jpg";
+import PROJECT2 from "../assets/SAM_1294.jpg";
+import PROJECT3 from "../assets/IMG_20190208_163640.jpg";
 import WHYUS1 from "../assets/Why-Choose-Us-Image-5.jpg";
 import WHYUS2 from "../assets/WhatsApp Image 2025-04-18 at 15.11.42.jpeg";
 import SERVICEIMG1 from "../assets/Service-Image-3.jpg";
@@ -25,7 +28,10 @@ const images = {
   TEAM3,
   TEAM4,
   CONTACTIMG1,
-  LOGO
+  LOGO,
+  PROJECT1,
+  PROJECT2,
+  PROJECT3,
 };
 
 export { images };

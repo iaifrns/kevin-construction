@@ -1,23 +1,23 @@
 const services: { title: string; icon: string; desc: string }[] = [
   {
-    title: "General Contracting",
+    title: "Entreprise Générale",
     icon: "fluent-emoji-high-contrast:building-construction",
-    desc: "Nullam suscipit, nisl accum san el pulvinar, orci urna laoreet nunc, egestas rutrum sed eros enim sit amet lorem nec.",
+    desc: "Prise en charge complète de vos projets, de la conception à la réalisation, avec un suivi rigoureux pour garantir qualité et respect des délais.",
   },
   {
-    title: "Residential Construction",
+    title: "Construction Résidentielle",
     icon: "emojione-monotone:house",
-    desc: "Nullam suscipit, nisl accum san el pulvinar, orci urna laoreet nunc, egestas rutrum sed eros enim sit amet lorem nec.",
+    desc: "Maisons, duplex et résidences modernes conçus et bâtis avec soin pour offrir confort, sécurité et durabilité.",
   },
   {
-    title: "Commercial Construction",
+    title: "Construction Commerciale",
     icon: "la:building",
-    desc: "Nullam suscipit, nisl accum san el pulvinar, orci urna laoreet nunc, egestas rutrum sed eros enim sit amet lorem nec.",
+    desc: "Immeubles de bureaux, centres commerciaux et infrastructures adaptées aux besoins des entreprises et investisseurs.",
   },
   {
-    title: "Renovations & Remodeling",
+    title: "Rénovations & Réhabilitations",
     icon: "emojione-monotone:construction",
-    desc: "Nullam suscipit, nisl accum san el pulvinar, orci urna laoreet nunc, egestas rutrum sed eros enim sit amet lorem nec.",
+    desc: "Modernisation, extension ou remise à neuf de vos bâtiments avec une finition raffinée et conforme aux normes actuelles.",
   },
 ];
 

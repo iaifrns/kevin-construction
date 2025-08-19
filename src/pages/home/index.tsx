@@ -24,7 +24,7 @@ const HomePage = () => {
       <MenuBar active={links.home} />
       <div className="w-full px-8 py-8 bg-[rgb(220,220,220)] flex flex-col items-center gap-6 pb-32">
         <div className="flex items-center w-full gap-8 py-4 max-[1035px]:flex-col">
-          <span className="font-bold font-poppins text-[58px] flex-1 text-titletext text-start w-full max-[700px]:text-[28px]">
+          <span className="font-bold font-poppins text-[56px] flex-1 text-titletext text-start w-full max-[700px]:text-[28px]">
             Construction experte.
             <br /> Résultats impeccables.
           </span>

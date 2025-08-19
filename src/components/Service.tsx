@@ -24,7 +24,7 @@ const Service = ({
         className="bg-primary rounded-2xl text-white font-semibold font-poppins p-4"
         onClick={() => navigateTo(links.service)}
       >
-        Read more
+        En savoir plus
       </button>
     </div>
   );

@@ -7,16 +7,16 @@ const WhyChooseUs = () => {
     <div className="flex w-full gap-8 max-[1035px]:flex-col">
       <div className="flex-1 flex flex-col justify-evenly max-[1035px]:gap-4">
         <p className="text-gray-600 text-xl font-bold font-poppins">
-          WHY CHOOSE US
+          POURQUOI NOUS CHOISIR
         </p>
         <p className="text-titletext max-[800px]:text-3xl max-[1035px]:text-[40px] text-[52px] font-poppins font-bold">
-          What Makes Us the Contractor You Can Trust
+          Votre Partenaire de Confiance en Construction
         </p>
         <p className="text-subtext">
-          Proin orci arcu, egestas sit amet nulla ut, semper volutpat risus.
-          Nullam vehicula sitae amet eros et semper. Proin ligula metus,
-          placerat eu tempus eu, port titor eget neque. Aenean ac est lectus.
-          Maecenas vene natis vesti bulum velit.
+          Avec plus de 15 ans d’expérience dans le BTP, nous vous accompagnons
+          de la conception à la réalisation de vos projets, en alliant expertise
+          technique, rigueur et innovation. Notre engagement : des ouvrages
+          durables, des délais respectés et une satisfaction client garantie.
         </p>
         <div className="w-full flex gap-6 max-[800px]:flex-col">
           <div className="flex bg-primary rounded-lg flex-col gap-3 p-6 flex-1 items-center justify-center">
@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
               className="text-white text-[72px]"
             />
             <p className="text-white font-bold font-poppins text-2xl text-center">
-              Skilled $ Certified Professionals
+              Des professionnels qualifiés & certifiés
             </p>
           </div>
           <div className="flex-2 flex flex-col justify-between max-[800px]:gap-4">
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
           <div className="bg-[rgb(200,200,200)] p-4 rounded-lg max-[1035px]:w-[60%] max-[500px]:w-[90%]">
             <div className="bg-white p-4 min-[1035px]:max-w-[300px]">
               <p className="font-semibold font-poppins text-2xl text-primary">
-                "Excellence isn't a goal — it's our foundation."
+                "L’excellence n’est pas un objectif — c’est notre fondation."
               </p>
             </div>
           </div>

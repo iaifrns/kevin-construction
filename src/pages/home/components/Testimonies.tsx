@@ -6,15 +6,16 @@ const Testimonies = () => {
     <div className="w-full flex flex-col gap-8">
       <div className="flex flex-col items-center justify-center">
         <p className="text-gray-600 text-2xl font-poppins font-bold">
-          Testimonial
+          Témoignage
         </p>
         <p className="text-titletext text-[56px] max-[800px]:text-3xl  font-poppins font-bold min-[1035px]:w-[70%] text-center">
-          Trusted by Families, Businesses & Communities
+          De la Confiance des Familles, des Entreprises et des Communautés
         </p>
         <p className="text-subtext text-lg text-center min-[1035px]:w-[50%]">
-          Proin orci arcu, egestas sit amet nulla ut, semper volutpat risus.
-          Nullam vehicula sitae amet eros et semper. Proin ligula metus,
-          placerat eu felis tempus eu, port titor eget neque et congue.
+          Depuis plus de 15 ans, nous bâtissons des ouvrages qui améliorent la
+          vie quotidienne, soutiennent les entreprises et renforcent les
+          communautés. Chaque projet est réalisé avec sérieux, transparence et
+          engagement, gages de la confiance durable de nos partenaires.
         </p>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-6">

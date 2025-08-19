@@ -40,6 +40,6 @@ const phone = "+237 695890377 / 652569078 / 699784798";
 const phone1 = "+237 695890377";
 const email = "contact@groupebeauxservices.org";
 const webpage = "www.domainsite.com";
-const location = " YAOUNDE -  CAMEROUN";
+const location = "Siège Social Yaoundé";
 
 export { stats, stats2, phone, email, webpage, location, phone1 };

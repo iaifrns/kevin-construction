@@ -21,7 +21,7 @@ const HeaderSection = () => {
           étudier vos besoins et vous proposer des solutions sur mesure.
         </p>
         <button
-          className="bg-secondary text-white font-bold font-poppins px-8 py-3 rounded-4xl w-fit text-lg"
+          className="bg-secondary text-white font-bold font-poppins px-8 py-3 rounded-4xl w-fit text-lg hover:bg-primary"
           onClick={() => navigateTo(links.contact)}
         >
           Contactez-Nous Dès Aujourd’hui
