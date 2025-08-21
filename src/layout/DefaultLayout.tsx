@@ -1,13 +1,36 @@
-import { useContext } from "react";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { menu } from "../constants/menu";
 import { MobileContext } from "../context/MenuProvider";
 
 const DefaultLayout = () => {
   const navigateTo = useNavigate();
+  const { pathname } = useLocation();
   const { open, setOpen } = useContext(MobileContext);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
+
   return (
-    <div className="relative m-0 p-0">
+    <div className="relative m-0 p-0 w-full h-full">
+      <div className="fixed p-8 bottom-0 right-0 flex justify-center items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 16 16"
+          className="animate-bounce cursor-pointer"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <path
+            fill="black"
+            d="m1 7.4l.7.7l6-6l6 6l.7-.7L8.1 1h-.7zm0 6l.7.7l6-6l6 6l.7-.7L8.1 7h-.7z"
+          />
+        </svg>
+      </div>
       <div
         className={`absolute w-full h-full bg-primary/30 z-20 transition-all duration-300 ease-out ${
           !open && "hidden"
