@@ -17,6 +17,7 @@ import LOGO from "../assets/Design sans titre(5).png";
 import IMG1 from "../assets/26991695_1981206938868614_4603266858185040058_n.jpg";
 import IMG2 from "../assets/20181028_095439.jpg";
 import IMG3 from "../assets/20181028_102250.jpg";
+import AVATAR1 from "../assets/WhatsApp Image 2025-08-20 at 11.26.17_1d7aa0de.jpg"
 
 const images = {
   HEROIMG,
@@ -38,6 +39,7 @@ const images = {
   IMG1,
   IMG2,
   IMG3,
+  AVATAR1
 };
 
 export { images };

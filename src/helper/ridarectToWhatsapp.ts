@@ -3,4 +3,9 @@ const ridarectToWhatsapp = () => {
   window.open(url, "_blank");
 };
 
-export { ridarectToWhatsapp };
+const ridarectToFacebook = () => {
+  const url = `https://www.facebook.com/share/p/1CuYeZrHMg/`;
+  window.open(url, "_blank");
+};
+
+export { ridarectToWhatsapp, ridarectToFacebook };

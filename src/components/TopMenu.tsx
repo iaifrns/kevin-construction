@@ -1,5 +1,6 @@
 import { Icon } from "@iconify-icon/react";
 import { enterpriseInfo, media } from "../constants/topMenuData";
+import { ridarectToFacebook } from "../helper/ridarectToWhatsapp";
 
 const TopMenu = () => {
   return (
@@ -21,7 +22,15 @@ const TopMenu = () => {
             key={med + " top bar " + ind}
             className="h-10 w-10 flex justify-center items-center rounded-full bg-secondary"
           >
-            <Icon icon={med} className="text-white text-lg" />
+            <Icon
+              icon={med}
+              className="text-white text-lg cursor-pointer"
+              onClick={() => {
+                if (med.includes("facebook")) {
+                  ridarectToFacebook();
+                }
+              }}
+            />
           </div>
         ))}
       </div>

@@ -33,7 +33,7 @@ const HomePage = () => {
               Groupe Beaux Services (G.B.S.) est une entreprise camerounaise de
               Bâtiments et Travaux Publics (BTP) spécialisée dans la conception,
               l’étude et la réalisation d’ouvrages de génie civil. Son siège
-              social est basé à Yaoundé (Ahala), avec une direction technique à
+              social est basé à Yaoundé, avec une direction technique à
               Douala.
             </p>
             <div className="flex gap-4 items-center">

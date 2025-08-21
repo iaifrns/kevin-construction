@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { services } from "../constants/services";
 import { email, location, phone, webpage } from "../constants/data";
 import { images } from "../constants/images";
+import { ridarectToFacebook } from "../helper/ridarectToWhatsapp";
 
 const data: { icon: string; title: string; info: string }[] = [
   {
@@ -50,7 +51,12 @@ const Footer = () => {
             {media.map((med, ind) => (
               <div
                 key={med + " top bar " + ind}
-                className="h-10 w-10 flex justify-center items-center rounded-full bg-secondary"
+                className="h-10 w-10 flex justify-center items-center rounded-full bg-secondary cursoir-pointer"
+                onClick={() => {
+                  if (med.includes("facebook")) {
+                    ridarectToFacebook();
+                  }
+                }}
               >
                 <Icon icon={med} className="text-white text-lg" />
               </div>

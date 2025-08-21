@@ -49,9 +49,9 @@ const AboutUs = () => {
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-3">
                     <img
-                      src={images.ABOUT1}
-                      alt={images.ABOUT1}
-                      className="w-15 h-15 rounded-full"
+                      src={images.AVATAR1}
+                      alt={images.AVATAR1}
+                      className="w-15 h-15 rounded-full object-cover"
                     />
                     <div className="flex flex-col">
                       <p className="font-bold font-poppins">
