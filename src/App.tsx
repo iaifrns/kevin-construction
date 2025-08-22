@@ -7,6 +7,7 @@ import { links } from "./constants/links";
 import DefaultLayout from "./layout/DefaultLayout";
 import MobileProvider from "./context/MenuProvider";
 import ProjectPage from "./pages/projects";
+import ProjectDetails from "./pages/projects/ProjectDetails";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path={links.contact} element={<ContactUsPage />} />
             <Route path={links.service} element={<ServicePage />} />
             <Route path={links.project} element={<ProjectPage />} />
+            <Route path={links.ProjectDetail} element={<ProjectDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>

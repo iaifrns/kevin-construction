@@ -1,3 +1,6 @@
+import { useNavigate } from "react-router-dom";
+import { links } from "../constants/links";
+
 const Project = ({
   img,
   title1,
@@ -11,6 +14,7 @@ const Project = ({
   desc: string;
   active: boolean;
 }) => {
+  const navigateTo = useNavigate()
   return (
     <div className="flex-1 border-dotted border-3 border-secondary p-6 rounded-2xl">
       <div
@@ -34,7 +38,7 @@ const Project = ({
               {title2}
             </p>
             <p className="text-gray-300 text-lg max-[800px]:text-sm">{desc}</p>
-            <button className="bg-secondary hover:bg-primary px-6 py-3 rounded-2xl text-white font-semibold w-fit">
+            <button onClick={()=>navigateTo(links.ProjectDetail)} className="bg-secondary hover:bg-primary px-6 py-3 rounded-2xl text-white font-semibold w-fit">
               Voir Plus
             </button>
             {/*  <div className="gap-2 flex mt-2">

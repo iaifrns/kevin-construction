@@ -3,7 +3,8 @@ const links = {
     about: '/about_us',
     contact: '/contact_us',
     service: '/service',
-    project: '/project'
+    project: '/project',
+    ProjectDetail: '/project/project_detail'
 }
 
 export {links}
