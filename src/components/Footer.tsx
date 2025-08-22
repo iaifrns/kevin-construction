@@ -68,7 +68,7 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             {menu.map((item, ind) => (
               <div
-                className="flex gap-2 items-center"
+                className="flex gap-2 items-center cursor-pointer"
                 onClick={() => navigateTo(item.link)}
                 key={ind + item.text + item.link}
               >

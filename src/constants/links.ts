@@ -2,7 +2,8 @@ const links = {
     home: '/',
     about: '/about_us',
     contact: '/contact_us',
-    service: '/service'
+    service: '/service',
+    project: '/project'
 }
 
 export {links}

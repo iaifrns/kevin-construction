@@ -14,7 +14,7 @@ const DefaultLayout = () => {
 
   return (
     <div className="relative m-0 p-0 w-full h-full">
-      <div className="fixed p-8 bottom-0 right-0 flex justify-center items-center">
+      <div className="fixed p-8 bottom-0 right-0 flex justify-center items-center z-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"

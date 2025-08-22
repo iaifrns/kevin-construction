@@ -39,6 +39,11 @@ const Projects = () => {
           active={false}
         />
       </div>
+      <div className="flex justify-center items-center">
+        <div className="flex items-center justify-center gap-2 bg-secondary hover:bg-primary p-3 mt-6 rounded-2xl w-[200px]">
+          <p className="text-xl font-semibold font-poppins text-white">Plus</p>
+        </div>
+      </div>
     </div>
   );
 };

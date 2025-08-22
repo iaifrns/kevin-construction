@@ -14,6 +14,10 @@ const menu:{text:string, link: string}[] = [
     link: links.service
 },
 {
+    text: "Projets",
+    link: links.project
+},
+{
     text: "Contact",
     link: links.contact
 },

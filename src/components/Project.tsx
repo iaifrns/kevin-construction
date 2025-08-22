@@ -3,23 +3,30 @@ const Project = ({
   title1,
   title2,
   desc,
-  active
+  active,
 }: {
   img: string;
   title1: string;
   title2: string;
   desc: string;
-  active:boolean
+  active: boolean;
 }) => {
-  const num = new Array(5).fill("");
   return (
     <div className="flex-1 border-dotted border-3 border-secondary p-6 rounded-2xl">
       <div
         className="w-full h-[500px] max-[1035px]:w-full max-[1035px]:h-[400px] max-[800px]:h-[300px] min-[1600px]:h-[600px] bg-cover bg-no-repeat rounded-2xl"
         style={{ backgroundImage: `url(${img})` }}
       >
-        <div className={`h-full w-full rounded-2xl ${active && 'bg-primary/50'} bg-gradient-to-t from-primary/95  hover:bg-primary/50 flex flex-col justify-end overflow-hidden`}>
-          <div className={`flex w-full h-fit p-4 flex-col ${!active && 'translate-y-28'} max-[1035px]:translate-0 hover:translate-0 transition-all duration-500 ease-out`}>
+        <div
+          className={`h-full w-full rounded-2xl ${
+            active && "bg-primary/50"
+          } bg-gradient-to-t from-primary/95  hover:bg-primary/50 flex flex-col justify-end overflow-hidden`}
+        >
+          <div
+            className={`flex w-full h-fit p-4 flex-col ${
+              !active && "translate-y-28"
+            } max-[1035px]:translate-0 hover:translate-0 transition-all duration-500 ease-out`}
+          >
             <p className="text-white font-poppins font-semibold max-[800px]:text-[14px] text-xl">
               {title1}
             </p>
@@ -27,7 +34,10 @@ const Project = ({
               {title2}
             </p>
             <p className="text-gray-300 text-lg max-[800px]:text-sm">{desc}</p>
-            <div className="gap-2 flex mt-2">
+            <button className="bg-secondary hover:bg-primary px-6 py-3 rounded-2xl text-white font-semibold w-fit">
+              Voir Plus
+            </button>
+            {/*  <div className="gap-2 flex mt-2">
               {num.map((_, ind) => (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +67,7 @@ const Project = ({
                   </g>
                 </svg>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
