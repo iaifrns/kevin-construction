@@ -49,8 +49,11 @@ const ProjectDetails = () => {
       <div className="w-full px-8 py-8 bg-[rgb(220,220,220)] flex flex-col items-center gap-6 pb-32">
         <ImagePost img={projet.img[1]} />
 
-        <div className="flex gap-6 w-[90%]">
+        <div className="flex gap-6 w-[90%] max-[1035px]:w-full max-[1035px]:flex-col">
           <div className="flex-1 flex flex-col gap-8">
+            <p className="text-[48px] font-bold font-poppins text-titletext min-[1035px]:hidden text-center max-[800px]:text-2xl">
+                {projet.title1}
+              </p>
             <div className=" p-4 rounded-2xl bg-white flex h-fit">
               <div className="rounded-2xl bg-gray-200 w-full flex flex-col">
                 <div className="bg-primary p-4 rounded-t-2xl">
@@ -106,12 +109,12 @@ const ProjectDetails = () => {
                 {projet.desc1}
               </p>
             </div>
-            <img src={projet.img[2]} alt={projet.img[2]} className="w-full h-full object-cover rounded-2xl" />
+            <img src={projet.img[2]} alt={projet.img[2]} className="w-full h-[300px] object-cover rounded-2xl" />
           </div>
 
           <div className="flex-3 flex flex-col gap-6">
             <div className="flex flex-col">
-              <p className="text-[48px] font-bold font-poppins text-titletext">
+              <p className="text-[48px] font-bold font-poppins text-titletext max-[1035px]:hidden">
                 {projet.title1}
               </p>
             </div>

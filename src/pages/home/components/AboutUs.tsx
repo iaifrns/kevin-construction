@@ -79,7 +79,7 @@ const AboutUs = () => {
         <p className="text-[rgb(95,95,95)] font-bold font-poppins [1035px]:text-sm">
           À propos
         </p>
-        <p className="text-titletext font-poppins text-3xl min-[800px]:text-[52px] font-semibold">
+        <p className="text-titletext font-poppins text-3xl min-[1600px]:text-[52px] min-[800px]:text-[42px] font-semibold">
           Construire des structures, <br />
           Créer des relations
         </p>

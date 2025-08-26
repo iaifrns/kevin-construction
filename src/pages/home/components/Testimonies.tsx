@@ -8,10 +8,10 @@ const Testimonies = () => {
         <p className="text-gray-600 text-2xl font-poppins font-bold">
           Témoignage
         </p>
-        <p className="text-titletext text-[56px] max-[800px]:text-3xl  font-poppins font-bold min-[1035px]:w-[70%] text-center">
+        <p className="text-titletext text-[56px] max-[800px]:text-3xl  font-poppins font-bold min-[1600px]:w-[70%] max-[1500px]:w-[85%] text-center">
           De la Confiance des Familles, des Entreprises et des Communautés
         </p>
-        <p className="text-subtext text-lg text-center min-[1035px]:w-[50%]">
+        <p className="text-subtext text-lg text-center min-[1600px]:w-[50%] max-[1400px]:w-[80%]">
           Depuis plus de 15 ans, nous bâtissons des ouvrages qui améliorent la
           vie quotidienne, soutiennent les entreprises et renforcent les
           communautés. Chaque projet est réalisé avec sérieux, transparence et

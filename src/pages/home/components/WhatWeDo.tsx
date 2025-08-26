@@ -8,7 +8,7 @@ const WhatWeDo = () => {
   const navigateTo = useNavigate();
 
   return (
-    <div className="w-[80%] max-[1035px]:w-full flex flex-col justify-center items-center mt-4">
+    <div className="min-[1600px]:w-[80%] w-[90%] max-[1035px]:w-full flex flex-col justify-center items-center mt-4">
       <p className="text-subtext font-poppins text-lg font-bold">
         CE QUE NOUS FAISONS
       </p>

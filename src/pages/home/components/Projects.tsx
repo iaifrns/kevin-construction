@@ -1,14 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import Project from "../../../components/Project";
 import { images } from "../../../constants/images";
+import { links } from "../../../constants/links";
 
 const Projects = () => {
+
+  const navigateTo = useNavigate()
+
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <p className="font-poppins text-gray-600 font-bold text-xl">PROJETS</p>
       <p className="font-poppins text-titletext font-bold max-[1035px]:text-[40px] text-[48px] max-[800px]:text-3xl max-[800px]:text-center">
         Des Résultats Eprouvés sur Chacun de nos Chantiers
       </p>
-      <p className="text-subtext text-center min-[1035px]:w-[50%] ">
+      <p className="text-subtext text-center min-[1600px]:w-[50%] max-[1400px]:w-[80%]">
         Chaque projet que nous entreprenons est une preuve de notre engagement
         envers la qualité et la satisfaction client. Grâce à une équipe
         qualifiée et des méthodes rigoureuses, nous livrons des ouvrages
@@ -43,7 +48,7 @@ const Projects = () => {
         />
       </div>
       <div className="flex justify-center items-center">
-        <div className="flex items-center justify-center gap-2 bg-secondary hover:bg-primary p-3 mt-6 rounded-2xl w-[200px]">
+        <div className="flex items-center justify-center gap-2 bg-secondary hover:bg-primary p-3 mt-6 rounded-2xl w-[200px]" onClick={()=>navigateTo(links.project)}>
           <p className="text-xl font-semibold font-poppins text-white">Plus</p>
         </div>
       </div>

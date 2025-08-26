@@ -33,7 +33,7 @@ const data: { icon: string; title: string; info: string }[] = [
 const Footer = () => {
   const navigateTo = useNavigate();
   return (
-    <div className="md:p-16 max-md:p-8 bg-primary flex flex-col gap-10 ">
+    <div className="md:p-16 max-md:p-8 bg-primary flex flex-col gap-10 w-full">
       <div className="w-full h-full flex justify-between max-[1035px]:flex-col max-[1035px]:gap-6">
         <div className="flex flex-col gap-3 md:w-[400px] max-md:w-full">
           <div className="flex gap-2 items-center">
