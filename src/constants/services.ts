@@ -1,23 +1,23 @@
 const services: { title: string; icon: string; desc: string }[] = [
   {
-    title: "Entreprise Générale",
+    title: "Conception, études et plans",
     icon: "fluent-emoji-high-contrast:building-construction",
-    desc: "Prise en charge complète de vos projets, de la conception à la réalisation, avec un suivi rigoureux pour garantir qualité et respect des délais.",
+    desc: "Réalisation de plans architecturaux et techniques, études de faisabilité et conception complète de vos projets de construction.",
   },
   {
-    title: "Construction Résidentielle",
+    title: "Métrés, devis et business plan",
     icon: "emojione-monotone:house",
-    desc: "Maisons, duplex et résidences modernes conçus et bâtis avec soin pour offrir confort, sécurité et durabilité.",
+    desc: "Établissement précis des quantités, élaboration de devis détaillés et accompagnement dans la préparation de business plans adaptés.",
   },
   {
-    title: "Construction Commerciale",
+    title: "Construction en gros œuvre et travaux de finitions",
     icon: "la:building",
-    desc: "Immeubles de bureaux, centres commerciaux et infrastructures adaptées aux besoins des entreprises et investisseurs.",
+    desc: "Exécution des travaux de gros œuvre (fondations, structures, maçonnerie) et finitions soignées pour des ouvrages durables et esthétiques.",
   },
   {
-    title: "Rénovations & Réhabilitations",
+    title: "Rénovation et Réhabilitation",
     icon: "emojione-monotone:construction",
-    desc: "Modernisation, extension ou remise à neuf de vos bâtiments avec une finition raffinée et conforme aux normes actuelles.",
+    desc: "Travaux de modernisation, d’extension et de remise à neuf de bâtiments existants pour les adapter aux normes et besoins actuels.",
   },
 ];
 
