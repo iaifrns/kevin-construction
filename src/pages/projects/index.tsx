@@ -31,12 +31,13 @@ const ProjectPage = () => {
         <div className="mt-6 grid grid-cols-3 max-[1035px]:grid-cols-2 max-[800px]:grid-cols-1 justify-between w-full gap-6 max-[1035px]:flex-col min-[1500px]:w-[80%]">
           {projects1.map((p, ind) => (
             <Project
-              img={p.img}
+              img={p.img[0]}
               title1={p.title1}
               title2={p.title2}
-              desc={p.desc}
+              desc={""}
               active={true}
-              key={ind + p.desc + p.title1}
+              key={ind + p.title1}
+              i={ind}
             />
           ))}
         </div>

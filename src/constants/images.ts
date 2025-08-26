@@ -17,7 +17,43 @@ import LOGO from "../assets/Design sans titre(5).png";
 import IMG1 from "../assets/26991695_1981206938868614_4603266858185040058_n.jpg";
 import IMG2 from "../assets/20181028_095439.jpg";
 import IMG3 from "../assets/20181028_102250.jpg";
-import AVATAR1 from "../assets/WhatsApp Image 2025-08-20 at 11.26.17_1d7aa0de.jpg"
+import AVATAR1 from "../assets/WhatsApp Image 2025-08-20 at 11.26.17_1d7aa0de.jpg";
+import GOLF1 from "../assets/gold/IMG-20220804-WA0021.jpg";
+import GOLF2 from "../assets/gold/WhatsApp Image 2024-07-22 at 15.12.03.jpeg";
+import GOLF3 from "../assets/gold/IMG-20210928-WA0013.jpg";
+import GOLF4 from "../assets/gold/IMG-20211008-WA0009.jpg";
+import GOLF5 from "../assets/gold/IMG-20220804-WA0028.jpg";
+import GOLF6 from "../assets/gold/IMG-20220813-WA0030.jpg";
+import YASSA1 from "../assets/yassa/SAM_0244.jpg";
+import YASSA2 from "../assets/yassa/SAM_0264.jpg";
+import YASSA3 from "../assets/yassa/SAM_0294.jpg";
+import YASSA4 from "../assets/yassa/SAM_0310.jpg";
+import YASSA5 from "../assets/yassa/SAM_0315.jpg";
+import YASSA6 from "../assets/yassa/SAM_0317.jpg";
+import TRANS1 from "../assets/trans/IMG-20210611-WA0008.jpg";
+import TRANS2 from "../assets/trans/IMG-20210821-WA0008.jpg";
+import TRANS3 from "../assets/trans/IMG-20210825-WA0037.jpg";
+import TRANS4 from "../assets/trans/IMG-20210903-WA0024.jpg";
+import TRANS5 from "../assets/trans/IMG-20210928-WA0033.jpg";
+import TRANS6 from "../assets/trans/IMG-20211118-WA0038.jpg";
+import KRIBI1 from "../assets/kribi/IMG-20230317-WA0027.jpeg";
+import KRIBI2 from "../assets/kribi/IMG-20230729-WA0019.jpg";
+import KRIBI3 from "../assets/kribi/IMG_20220924_160623_458.jpg";
+import KRIBI4 from "../assets/kribi/IMG_20221001_120853_455.jpg";
+import KRIBI5 from "../assets/kribi/IMG_20231022_144831_523.jpg";
+import KRIBI6 from "../assets/kribi/WhatsApp Image 2022-08-19 at 07.52.23.jpeg";
+import PORT1 from "../assets/industry/IMG_20180514_120028.jpg";
+import PORT2 from "../assets/industry/IMG_20180514_124921.jpg";
+import PORT3 from "../assets/industry/IMG_20180619_103355.jpg";
+import PORT4 from "../assets/industry/IMG_20180806_111406.jpg";
+import PORT5 from "../assets/industry/IMG_20190206_104526.jpg";
+import PORT6 from "../assets/industry/IMG_20190208_163640.jpg";
+import JAPOMA1 from "../assets/japoma/20170617_095218.jpg"
+import JAPOMA2 from "../assets/japoma/20181028_095755.jpg"
+import JAPOMA3 from "../assets/japoma/20181028_101443.jpg"
+import JAPOMA4 from "../assets/japoma/2222.jpg"
+import JAPOMA5 from "../assets/japoma/DJI_0677.00_09_10_10.Still006.jpg"
+import JAPOMA6 from "../assets/japoma/IMG_20190108_152706.jpg"
 
 const images = {
   HEROIMG,
@@ -39,7 +75,19 @@ const images = {
   IMG1,
   IMG2,
   IMG3,
-  AVATAR1
+  AVATAR1,
 };
 
-export { images };
+const imgGolf = [GOLF1, GOLF2, GOLF3, GOLF4, GOLF5, GOLF6];
+
+const imgYassa = [YASSA1, YASSA2, YASSA3, YASSA4, YASSA5, YASSA6];
+
+const imgTrans = [TRANS1, TRANS2, TRANS3, TRANS4, TRANS5, TRANS6];
+
+const imgKribi = [KRIBI1, KRIBI2, KRIBI3, KRIBI4, KRIBI5, KRIBI6];
+
+const imgPortaire = [PORT1, PORT2, PORT3, PORT4, PORT5, PORT6];
+
+const imgJapoma = [JAPOMA1,JAPOMA2,JAPOMA3,JAPOMA4,JAPOMA5,JAPOMA6]
+
+export { images, imgGolf, imgYassa, imgTrans, imgKribi, imgPortaire, imgJapoma };

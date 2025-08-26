@@ -1,0 +1,1 @@
+export type file = {url: string, filename: string, mimeType: string}

@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { links } from "../constants/links";
+import { useContext } from "react";
+import { MobileContext } from "../context/MenuProvider";
+import { projects1 } from "../constants/projects";
 
 const Project = ({
   img,
@@ -7,14 +10,17 @@ const Project = ({
   title2,
   desc,
   active,
+  i
 }: {
   img: string;
   title1: string;
   title2: string;
   desc: string;
   active: boolean;
+  i:number
 }) => {
   const navigateTo = useNavigate()
+  const {setProjet} = useContext(MobileContext)
   return (
     <div className="flex-1 border-dotted border-3 border-secondary p-6 rounded-2xl">
       <div
@@ -34,11 +40,14 @@ const Project = ({
             <p className="text-white font-poppins font-semibold max-[800px]:text-[14px] text-xl">
               {title1}
             </p>
-            <p className="text-white font-poppins font-bold text-[36px] max-[800px]:text-2xl">
+            <p className="text-white font-poppins font-bold text-[28px] max-[800px]:text-xl">
               {title2}
             </p>
             <p className="text-gray-300 text-lg max-[800px]:text-sm">{desc}</p>
-            <button onClick={()=>navigateTo(links.ProjectDetail)} className="bg-secondary hover:bg-primary px-6 py-3 rounded-2xl text-white font-semibold w-fit">
+            <button onClick={()=>{
+              setProjet(projects1[i])
+              navigateTo(links.ProjectDetail)
+            }} className="bg-secondary hover:bg-primary px-6 py-3 rounded-2xl text-white font-semibold w-fit">
               Voir Plus
             </button>
             {/*  <div className="gap-2 flex mt-2">

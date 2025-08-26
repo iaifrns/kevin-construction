@@ -1,0 +1,42 @@
+import PROJETGOLF from "../assets/files/Projet GOLF .pdf";
+import PROJETYASSA from "../assets/files/Résidence Yassa.pdf";
+import PROJETTRANS from "../assets/files/Résidence Transformateurs.pdf";
+import PROJETKRIBI from "../assets/files/Résidence kribi.pdf";
+import PROJECTPORT from "../assets/files/projet portaire.pdf";
+import PROJECTJAPOMA from "../assets/files/Stade de Japoma.pdf";
+import type { file } from "../type";
+
+const paths: Record<string, file> = {
+  PROJETGOLF: {
+    url: PROJETGOLF,
+    filename: "Projet GOLF .pdf",
+    mimeType: "application/pdf",
+  },
+  PROJETYASSA: {
+    url: PROJETYASSA,
+    filename: "Résidence Yassa.pdf",
+    mimeType: "application/pdf",
+  },
+  PROJETTRANS: {
+    url: PROJETTRANS,
+    filename: "Résidence Transformateurs.pdf",
+    mimeType: "application/pdf",
+  },
+  PROJETKRIBI: {
+    url: PROJETKRIBI,
+    filename: "Résidence kribi.pdf",
+    mimeType: "application/pdf",
+  },
+  PROJECTPORT: {
+    url: PROJECTPORT,
+    filename: "projet portaire.pdf",
+    mimeType: "application/pdf",
+  },
+  PROJECTJAPOMA: {
+    url: PROJECTJAPOMA,
+    filename: "Stade de Japoma.pdf",
+    mimeType: "application/pdf",
+  },
+};
+
+export { paths };

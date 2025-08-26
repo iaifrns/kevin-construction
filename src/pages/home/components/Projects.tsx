@@ -21,6 +21,7 @@ const Projects = () => {
           title2="Résidence Moderne à Yassa"
           desc="Un duplex conçu et réalisé avec soin, alliant confort, esthétique et durabilité pour répondre aux besoins d’une famille en pleine croissance."
           active={false}
+          i={0}
         />
 
         <Project
@@ -29,6 +30,7 @@ const Projects = () => {
           title2="Centre d’Affaires Tsingha"
           desc="Un complexe de bureaux moderne construit pour favoriser le dynamisme des entreprises locales, livré dans le respect des normes et des délais."
           active={true}
+          i={1}
         />
 
         <Project
@@ -37,6 +39,7 @@ const Projects = () => {
           title2="Entrepôt Logistique du Port"
           desc="Un espace industriel robuste et fonctionnel destiné au stockage et à la distribution, conçu pour optimiser la chaîne logistique."
           active={false}
+          i={2}
         />
       </div>
       <div className="flex justify-center items-center">
