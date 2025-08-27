@@ -36,7 +36,7 @@ const stats2: { title: string; percent: number }[] = [
 },
 ];
 
-const phone = "+237 695890377 / 652569078 / 699784798";
+const phone = "+237 695890377 / 652569078 ";
 const phone1 = "+237 695890377";
 const email = "contact@groupebeauxservices.org";
 const webpage = "www.domainsite.com";
