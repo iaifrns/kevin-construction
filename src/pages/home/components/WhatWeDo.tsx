@@ -45,7 +45,7 @@ const WhatWeDo = () => {
             className="bg-secondary hover:bg-primary rounded-4xl font-poppins p-4 text-white font-semibold"
             onClick={() => navigateTo(links.service)}
           >
-            View All Services
+            Consulter tous nos Services
           </button>
         </div>
         <div className="flex flex-col justify-between max-[1035px]:flex-col gap-4 w-full">
