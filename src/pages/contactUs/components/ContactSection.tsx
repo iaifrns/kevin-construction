@@ -52,11 +52,13 @@ const ContactSection = () => {
             Contact
           </p>
           <p className="font-poppins text-titletext font-bold max-[1035px]:text-[40px] text-[40px] max-[800px]:text-3xl max-[800px]:text-center">
-            For More Info You Can Contact Us On
+            Pour toute information complémentaire, contactez-nous au
           </p>
           <p className="text-subtext max-[800px]:text-center">
-            Cras tincidunt risus el vitae tortor aliquet, nec tincidunt felis
-            biben dum mentum. Aliquam elemen tum vitaem commodo, et congue.
+            Notre équipe est à votre disposition pour répondre à toutes vos
+            questions, vous conseiller et vous accompagner dans la réalisation
+            de vos projets. N’hésitez pas à nous joindre par téléphone, par
+            e-mail ou via notre formulaire de contact.
           </p>
         </div>
         <button
@@ -68,7 +70,7 @@ const ContactSection = () => {
             className="text-white text-[24px]"
           />
           <p className="text-white font-semibold font-poppins text-lg max-[500px]:text-sm">
-            Message us on Whatsapp
+            Contactez-nous via WhatsApp
           </p>
         </button>
         <p className="w-full text-center font-semibold">OR</p>
@@ -83,7 +85,7 @@ const ContactSection = () => {
             className="p-4 rounded-2xl bg-white"
           ></textarea>
           <button className="bg-secondary hover:bg-primary text-white font-bold text-lg font-poppins p-4 rounded-2xl transition-all duration-300 ease-in-out">
-            Send Message
+            Envoyer
           </button>
         </div>
       </div>
