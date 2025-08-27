@@ -52,7 +52,7 @@ const ContactSection = () => {
             Contact
           </p>
           <p className="font-poppins text-titletext font-bold max-[1035px]:text-[40px] text-[40px] max-[800px]:text-3xl max-[800px]:text-center">
-            Pour toute information complémentaire, contactez-nous au
+            Pour Toute Information Complémentaire, Contactez-Nous
           </p>
           <p className="text-subtext max-[800px]:text-center">
             Notre équipe est à votre disposition pour répondre à toutes vos
