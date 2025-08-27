@@ -30,16 +30,16 @@ const AboutUs = () => {
   return (
     <div className="flex justify-center w-[85%] items-center gap-6 max-[1035px]:flex-col max-[800px]:gap-6 max-[1035px]:gap-28 max-[1035px]:w-full h-fit">
       <div className="relative flex-1 max-md:w-full ">
-        <div className="w-full min-[800px]:h-[95%] flex p-6 gap-6 items-center border-dotted border-secondary border-3 rounded-2xl max-[800px]:flex-col">
+        <div className="w-full min-[800px]:h-[95%] flex p-6 items-center justify-between border-dotted border-secondary border-3 rounded-2xl max-[800px]:flex-col">
           <img
             src={images.ABOUT1}
             alt={images.ABOUT1}
-            className="object-cover w-full h-full min-[1035px]:h-[550px] rounded-2xl max-[800px]:h-[450px]"
+            className="object-cover max-[800px]:w-full w-[48%] h-full min-[1035px]:h-[550px] rounded-2xl max-[800px]:h-[450px]"
           />
           <img
             src={images.ABOUT2}
             alt={images.ABOUT2}
-            className="object-cover w-full h-full rounded-2xl min-[1035px]:h-[550px] max-[800px]:h-[450px]"
+            className="object-cover max-[800px]:w-full w-[48%] h-full rounded-2xl min-[1035px]:h-[550px] max-[800px]:h-[450px]"
           />
         </div>
         <div className="block max-[800px]:mt-4 min-[800px]:absolute w-full min-[800px]:-bottom-15">
