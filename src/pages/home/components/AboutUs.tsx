@@ -97,9 +97,11 @@ const AboutUs = () => {
               className="flex flex-col gap-2 rounded-xl bg-white "
               key={i + d.title}
             >
-              <p className="w-full bg-primary p-4 rounded-t-xl font-bold text-white [1035px]:text-2xl text-center">
-                {d.title}
-              </p>
+              <div className="w-full bg-primary p-4 rounded-t-xl">
+                <p className=" font-bold text-white [1035px]:text-2xl text-center">
+                  {d.title}
+                </p>
+              </div>
               <div className="flex flex-col p-4 gap-2">
                 {d.desc.map((text, ind) => (
                   <div className="flex gap-2 items-center" key={ind + text}>
