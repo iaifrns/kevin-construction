@@ -77,10 +77,11 @@ const ContactSection = () => {
         ok = false;
         break;
       case fromData.phone.length < 4:
-        handleErrorMessage("name", "Please Enter a correct phone number formate")
+        handleErrorMessage("phone", "Veuillez entrer un numéro de téléphone au format correct")
         ok = false;
         break;
       case fromData.message.length < 6:
+        handleErrorMessage("message", "Veuillez entrer le message")
         ok = false;
         break;
     }
