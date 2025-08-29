@@ -5,9 +5,9 @@ import { ridarectToWhatsapp } from "../../../helper/ridarectToWhatsapp";
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const templateID = "template_ic3im7n";
-const serviceID = "service_poc1cuj";
-const publicKey = "yN-gLhPTPxMXzApQb";
+const templateID = "template_357kjld";
+const serviceID = "service_2kye1s5";
+const publicKey = "69GnNN4nlG5ijDQs6";
 
 type FormData = { name: string; phone: string; email: string; message: string };
 
