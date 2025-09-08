@@ -14,7 +14,7 @@ const MenuBar = ({ active }: { active: string }) => {
       <div className="flex items-center justify-center">
         <img src={images.LOGO} alt={images.LOGO} className="w-[52px]" />
         <div className="flex flex-col ">
-          <span className="text-[44px] max-[500px]:text-3xl font-poppins text-white font-bold">
+          <span className="text-[40px] max-[500px]:text-3xl font-poppins text-white font-bold">
             G.B.S GROUPE
           </span>
           {/* <span className="font-poppins font-semibold text-white">
@@ -29,7 +29,7 @@ const MenuBar = ({ active }: { active: string }) => {
             onClick={() => navigateTo(text.link)}
             className={`${
               active == text.link ? "text-secondary" : "text-white"
-            }  hover:text-secondary transition-all duration-300 ease-out text-lg font-poppins font-semibold cursor-pointer`}
+            }  hover:text-secondary transition-all duration-300 ease-out font-poppins font-semibold cursor-pointer`}
           >
             {text.text}
           </p>

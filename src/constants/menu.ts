@@ -21,6 +21,10 @@ const menu:{text:string, link: string}[] = [
     text: "Contact",
     link: links.contact
 },
+{
+    text: "Formation",
+    link: links.contact
+},
 ]
 
 export {menu}

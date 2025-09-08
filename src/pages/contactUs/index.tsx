@@ -11,7 +11,7 @@ const ContactUsPage = () => {
     <div className="m-0 p-0 flex flex-col w-full">
       <TopMenu />
       <MenuBar active={links.contact} />
-      <Header title="Contact Us" page="Contact Us" img={images.IMG2} />
+      <Header title="Contact" page="Contact" img={images.IMG2} />
       <ContactSection />
       <Footer />
     </div>

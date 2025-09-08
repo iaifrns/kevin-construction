@@ -42,7 +42,7 @@ const ProjectDetails = () => {
       <TopMenu />
       <MenuBar active={links.project} />
       <Header
-        title="Project Detail"
+        title={projet.title1}
         page="Projects / Project Detail"
         img={projet.img[0]}
       />

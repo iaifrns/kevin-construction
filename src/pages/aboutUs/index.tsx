@@ -15,7 +15,7 @@ const AboutUsPage = () => {
   return <div className="m-0 p-0 flex flex-col w-full">
       <TopMenu />
       <MenuBar active={links.about} />
-      <Header title="About Us" page="About Us" img={images.IMG1} />
+      <Header title="À Propos" page="À Propos" img={images.IMG1} />
       <div className="w-full px-8 py-16 bg-[rgb(220,220,220)] flex flex-col items-center gap-24">
         <AboutUs />
         <Statistiques />
