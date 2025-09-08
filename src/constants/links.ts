@@ -4,7 +4,8 @@ const links = {
     contact: '/contact_us',
     service: '/service',
     project: '/project',
-    ProjectDetail: '/project/project_detail'
+    ProjectDetail: '/project/project_detail',
+    Formation: '/formation'
 }
 
 export {links}

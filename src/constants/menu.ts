@@ -23,7 +23,7 @@ const menu:{text:string, link: string}[] = [
 },
 {
     text: "Formation",
-    link: links.contact
+    link: links.Formation
 },
 ]
 

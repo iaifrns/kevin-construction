@@ -8,6 +8,7 @@ import DefaultLayout from "./layout/DefaultLayout";
 import MobileProvider from "./context/MenuProvider";
 import ProjectPage from "./pages/projects";
 import ProjectDetails from "./pages/projects/ProjectDetails";
+import TrainingPage from "./pages/training";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path={links.service} element={<ServicePage />} />
             <Route path={links.project} element={<ProjectPage />} />
             <Route path={links.ProjectDetail} element={<ProjectDetails />} />
+            <Route path={links.Formation} element={<TrainingPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
