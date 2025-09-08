@@ -12,13 +12,13 @@ const TrainingPage = () => {
       <TopMenu />
       <MenuBar active={links.Formation} />
       <Header title="Formation" page="Fromation" img={images.HEROIMG} />
-      <div className="w-[90%] flex py-16 px-8 gap-8">
-        <div className="flex-2 flex flex-col gap-8">
+      <div className="w-[90%] max-[500px]:w-full flex py-16 px-8 gap-8 max-[1030px]:flex-col-reverse relative">
+        <div className="flex-2 flex flex-col gap-8 h-fit min-[1035px]:sticky top-2">
           <div className="border-dotted border-3 border-secondary rounded-2xl p-6">
             <img
               src={images.ABOUT1}
               alt={images.ABOUT1}
-              className="w-full rounded-2xl object-cover h-[200px]"
+              className="w-full rounded-2xl object-cover h-[300px] max-[500px]:h-[200px]"
             />
           </div>
           <div className="flex flex-col w-full rounded-2xl bg-gray-300 p-6 gap-6">
@@ -48,10 +48,10 @@ const TrainingPage = () => {
         <div className="flex-3 flex flex-col gap-8">
           <div className="flex flex-col">
             <p className="text-gray-500 font-semibold text-lg">Formation</p>
-            <p className="text-titletext font-bold text-[40px] font-poppins">
+            <p className="text-titletext font-bold text-[40px] max-[500px]:text-[28px] font-poppins">
               Formations professionnelles avec plus de 16 ans d’expertise
             </p>
-            <p className="text-subtext">
+            <p className="text-subtext max-[500px]:pt-3">
               Bénéficiez du savoir-faire d’une entreprise de construction
               reconnue, forte de plus de 16 ans d’expérience. Nos formations
               pratiques vous offrent un véritable avantage pour développer vos
@@ -63,7 +63,7 @@ const TrainingPage = () => {
             <div className="flex flex-col gap-3 w-full">
               {training.map((item, ind) => (
                 <div
-                  className="w-full rounded-2xl bg-bg1 p-4 flex gap-6"
+                  className="w-full rounded-2xl bg-bg1 p-4 flex gap-6 max-[500px]:flex-col-reverse"
                   key={item.title + ind}
                 >
                   <div className="flex flex-col gap-2">
@@ -75,7 +75,7 @@ const TrainingPage = () => {
                   <img
                     src={item.img}
                     alt={item.img}
-                    className="w-[200px] h-[100px] object-cover rounded-2xl"
+                    className="w-[200px] max-[500px]:w-full h-[100px] object-cover rounded-2xl"
                   />
                 </div>
               ))}
