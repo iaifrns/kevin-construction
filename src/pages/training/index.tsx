@@ -68,14 +68,12 @@ const TrainingPage = () => {
                 >
                   <div className="flex flex-col gap-2">
                     <p className="font-semibold text-xl">{item.title}</p>
-                    <p className="text-subtext">
-                      {item.desc}
-                    </p>
+                    <p className="text-subtext">{item.desc}</p>
                   </div>
                   <img
                     src={item.img}
                     alt={item.img}
-                    className="w-[200px] max-[500px]:w-full h-[100px] object-cover rounded-2xl"
+                    className="w-[300px] max-[500px]:w-full h-[100px] object-cover rounded-2xl"
                   />
                 </div>
               ))}
