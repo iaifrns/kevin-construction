@@ -4,29 +4,164 @@ import { phone } from "../../../constants/data";
 import { faq } from "../../../constants/faq";
 import { images } from "../../../constants/images";
 import { ridarectToWhatsapp } from "../../../helper/ridarectToWhatsapp";
+import emailjs from "@emailjs/browser";
+
+const templateID = "template_357kjld";
+const serviceID = "service_2kye1s5";
+const publicKey = "69GnNN4nlG5ijDQs6";
 
 const FAQ = () => {
   const [isdrop, setIsdrop] = useState(0);
+
+  const [infoForm, setInfoForm] = useState<
+    Record<string, { text: string; error?: string }>
+  >({
+    email: {
+      text: "",
+    },
+    message: {
+      text: "",
+    },
+    name: {
+      text: "",
+    },
+  });
+
+  const [sending, setSending] = useState(false);
+
+  const emptyData = () => {
+    setInfoForm({
+      name: { text: "", error: undefined },
+      email: { text: "", error: undefined },
+      message: { text: "", error: undefined },
+    });
+  };
+
+  const emptyError = () => {
+    setInfoForm({
+      name: { ...infoForm.name, error: undefined },
+      email: { ...infoForm.email, error: undefined },
+      message: { ...infoForm.phone, error: undefined },
+    });
+  };
+
+  const onSubmit = async () => {
+    let ok = true;
+
+    switch (true) {
+      case infoForm.name.text.length < 2:
+        setInfoForm({
+          ...infoForm,
+          name: { ...infoForm.name, error: "Veuillez entrer votre nom" },
+          email: { ...infoForm.name, error: undefined },
+          message: { ...infoForm.name, error: undefined },
+        });
+        ok = false;
+        break;
+      case infoForm.email.text.length < 3:
+        setInfoForm({
+          ...infoForm,
+          email: { ...infoForm.email, error: "Veuillez entrer votre mail" },
+          name: { ...infoForm.name, error: undefined },
+          message: { ...infoForm.name, error: undefined },
+        });
+        ok = false;
+        break;
+      case infoForm.message.text.length < 4:
+        setInfoForm({
+          ...infoForm,
+          message: {
+            ...infoForm.phone,
+            error: "Veuillez pauser votre question",
+          },
+          email: { ...infoForm.name, error: undefined },
+          name: { ...infoForm.name, error: undefined },
+        });
+        ok = false;
+        break;
+      default:
+        emptyError();
+    }
+
+    if (ok) {
+      setSending(true);
+      try {
+        await emailjs.send(
+          serviceID,
+          templateID,
+          {
+            name: infoForm.name.text,
+            message: infoForm.message.text,
+            email: infoForm.email.text,
+            phone: "",
+          },
+          {
+            publicKey: publicKey,
+          }
+        );
+        alert("Message envoyé ✅");
+        emptyData();
+      } catch (err: any) {
+        alert(
+          `Échec de l’envoi: ${err?.text || err?.message || "Erreur inconnue"}`
+        );
+      } finally {
+        setSending(false);
+      }
+    }
+  };
+
   return (
     <div className="flex min-[500px]:w-[80%] gap-8 max-[1035px]:flex-col">
       <div className="flex flex-col gap-6 flex-2">
         <div className="w-full py-8 px-6 flex flex-col gap-4 bg-[rgb(220,220,220)] rounded-2xl">
-          <input
-            type="text"
-            placeholder="Full Name"
-            className="bg-white rounded-2xl w-full focus:border-0 font-poppins p-3"
-          />
-          <input
-            type="text"
-            placeholder="Email Address"
-            className="bg-white rounded-2xl w-full focus:border-0 font-poppins  p-3"
-          />
-          <textarea
-            placeholder="Your Question"
-            className="bg-white w-full rounded-2xl h-[170px] p-3"
-          />
-          <button className="bg-secondary hover:bg-primary transition-all duration-300 ease-in-out font-poppins p-4 rounded-full text-white font-semibold">
-            Submit Message
+          <div className="flex flex-col gap-1">
+            <input
+              type="text"
+              placeholder="Entrez votre nom complet"
+              className="bg-white rounded-2xl w-full focus:border-0 font-poppins p-3"
+              value={infoForm.name.text}
+              onChange={(e) =>
+                setInfoForm({ ...infoForm, name: { text: e.target.value } })
+              }
+            />
+            <p className="text-sm text-red-500">{infoForm.name.error}</p>
+          </div>
+
+          <div className="flex flex-col gap-1">
+            <input
+              type="text"
+              placeholder="Email Address"
+              className="bg-white rounded-2xl w-full focus:border-0 font-poppins  p-3"
+              value={infoForm.email.text}
+              onChange={(e) =>
+                setInfoForm({ ...infoForm, email: { text: e.target.value } })
+              }
+            />
+            <p className="text-sm text-red-500">{infoForm.email.error}</p>
+          </div>
+          <div className="flex flex-col gap-1">
+            <textarea
+              placeholder="Your Question"
+              className="bg-white w-full rounded-2xl h-[170px] p-3"
+              value={infoForm.message.text}
+              onChange={(e) =>
+                setInfoForm({ ...infoForm, message: { text: e.target.value } })
+              }
+            />
+            <p className="text-sm text-red-500">{infoForm.message.error}</p>
+          </div>
+          <button
+            className="bg-secondary hover:bg-primary transition-all duration-300 ease-in-out font-poppins p-4 rounded-full text-white font-semibold flex items-center justify-center"
+            onClick={() => {
+              if (!sending) onSubmit();
+            }}
+          >
+            {sending ? (
+              <p className="animate-pulse">En cour ...</p>
+            ) : (
+              <p>Envoyer</p>
+            )}
           </button>
           <button
             className="bg-green-900 hover:bg-primary transition-all duration-300 ease-in-out font-poppins  p-4 rounded-full text-white font-semibold"
