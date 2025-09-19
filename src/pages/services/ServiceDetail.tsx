@@ -8,7 +8,7 @@ import { links } from "../../constants/links";
 import { detailServices } from "../../constants/services";
 import MiniGallery from "./components/MiniGallery";
 
-const imgs = [images.HEROIMG, images.PROJECT1, images.IMG1];
+const imgs = [images.HEROIMG, images.PROJECT1, images.IMG1, images.WHYUS2];
 
 const ServiceDetail = () => {
   const [i, setI] = useState(0);
@@ -63,25 +63,27 @@ const ServiceDetail = () => {
       </div>
       <div className="w-[85%]">
         <div className="w-full flex max-[1035px]:flex-col gap-4 ">
-          {detailServices
-            .filter((_, p) => p != i)
-            .map((detail, ind) => (
-              <div
-                key={ind + detail.title}
-                onClick={()=>setI(ind)}
-                className="flex-1 border-dotted border-secondary border-3 min-[1600px]:p-8 p-4 rounded-2xl flex flex-col gap-4 cursor-pointer hover:scale-95 transition-all duration-300"
-              >
-                <img
-                  src={imgs[ind]}
-                  alt={images.HEROIMG}
-                  className="rounded-2xl h-[350px] object-cover"
-                />
-                <p className="font-semibold text-2xl font-poppins text-titletext">
-                  {detail.title}
-                </p>
-                <p className="text-titletext">{detail.desc}</p>
-              </div>
-            ))}
+          {detailServices.map((detail, ind) => (
+            <>
+              {ind != i && (
+                <div
+                  key={ind + detail.title}
+                  onClick={() => setI(ind)}
+                  className="flex-1 border-dotted border-secondary border-3 min-[1600px]:p-8 p-4 rounded-2xl flex flex-col gap-4 cursor-pointer hover:scale-95 transition-all duration-300"
+                >
+                  <img
+                    src={imgs[ind]}
+                    alt={images.HEROIMG}
+                    className="rounded-2xl h-[350px] object-cover"
+                  />
+                  <p className="font-semibold text-2xl font-poppins text-titletext">
+                    {detail.title}
+                  </p>
+                  <p className="text-titletext">{detail.desc}</p>
+                </div>
+              )}
+            </>
+          ))}
         </div>
       </div>
       <div className="w-[95%]">
