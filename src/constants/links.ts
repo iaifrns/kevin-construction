@@ -5,7 +5,8 @@ const links = {
     service: '/service',
     project: '/project',
     ProjectDetail: '/project/project_detail',
-    Formation: '/formation'
+    Formation: '/formation',
+    serviceDetail: '/service/detail'
 }
 
 export {links}

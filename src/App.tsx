@@ -9,6 +9,7 @@ import MobileProvider from "./context/MenuProvider";
 import ProjectPage from "./pages/projects";
 import ProjectDetails from "./pages/projects/ProjectDetails";
 import TrainingPage from "./pages/training";
+import ServiceDetail from "./pages/services/ServiceDetail";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path={links.project} element={<ProjectPage />} />
             <Route path={links.ProjectDetail} element={<ProjectDetails />} />
             <Route path={links.Formation} element={<TrainingPage />} />
+            <Route path={links.serviceDetail} element={<ServiceDetail />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -22,7 +22,7 @@ const Service = ({
       <p className="text-subtext">{desc}</p>
       <button
         className="bg-primary rounded-2xl text-white font-semibold font-poppins p-4"
-        onClick={() => navigateTo(links.service)}
+        onClick={() => navigateTo(links.serviceDetail)}
       >
         En savoir plus
       </button>
