@@ -38,8 +38,7 @@ const stats2: { title: string; percent: number }[] = [
 
 const phone = "+237 695890377 / 652569078 ";
 const phone1 = "+237 695890377";
-const email = "groupe.beaux.service@gmail.com";
 const webpage = "www.domainsite.com";
 const location = "Siège Social Yaoundé";
 
-export { stats, stats2, phone, email, webpage, location, phone1 };
+export { stats, stats2, phone, webpage, location, phone1 };

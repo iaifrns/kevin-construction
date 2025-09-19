@@ -3,7 +3,7 @@ import { media } from "../constants/topMenuData";
 import { menu } from "../constants/menu";
 import { useNavigate } from "react-router-dom";
 import { services } from "../constants/services";
-import { email, location, phone, webpage } from "../constants/data";
+import { location, phone, webpage } from "../constants/data";
 import { images } from "../constants/images";
 import { ridarectToFacebook } from "../helper/ridarectToWhatsapp";
 
@@ -12,11 +12,6 @@ const data: { icon: string; title: string; info: string }[] = [
     icon: "tabler:phone-call",
     title: "Numéro de Téléphone",
     info: phone,
-  },
-  {
-    icon: "mdi:email-outline",
-    title: "Adresse E-mail",
-    info: email,
   },
   {
     icon: "pepicons-pencil:internet",

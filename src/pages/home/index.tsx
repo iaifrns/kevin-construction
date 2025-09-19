@@ -52,7 +52,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <ImagePost img={images.HEROIMG} />
+        <ImagePost img={images.PROJECT3} />
         <Statistiques />
         <Services />
         <AboutUs />

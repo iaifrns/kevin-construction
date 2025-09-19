@@ -1,10 +1,6 @@
-import { email, location, webpage } from "./data"
+import { location, webpage } from "./data"
 
 const enterpriseInfo: {icons: string, text: string}[] = [
-    {
-        icons: "material-symbols-light:mail-outline",
-        text: email
-    },
     {
         icons: "ei:location",
         text: location
