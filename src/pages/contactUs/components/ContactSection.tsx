@@ -11,7 +11,7 @@ const publicKey = "69GnNN4nlG5ijDQs6";
 
 type FormData = { name: string; phone: string; email: string; message: string };
 
-const CustomInput = ({
+export const CustomInput = ({
   type,
   placeholder,
   value,

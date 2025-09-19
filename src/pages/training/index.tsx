@@ -1,3 +1,4 @@
+import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import MenuBar from "../../components/MenuBar";
@@ -5,8 +6,114 @@ import TopMenu from "../../components/TopMenu";
 import { images } from "../../constants/images";
 import { links } from "../../constants/links";
 import { training } from "../../constants/training";
+import { ridarectToWhatsapp } from "../../helper/ridarectToWhatsapp";
+import { useState } from "react";
+import { CustomInput } from "../contactUs/components/ContactSection";
+import emailjs from "@emailjs/browser";
+
+const templateID = "template_357kjld";
+const serviceID = "service_2kye1s5";
+const publicKey = "69GnNN4nlG5ijDQs6";
 
 const TrainingPage = () => {
+  const [infoForm, setInfoForm] = useState<
+    Record<string, { text: string; error?: string }>
+  >({
+    email: {
+      text: "",
+    },
+    phone: {
+      text: "",
+    },
+    name: {
+      text: "",
+    },
+  });
+
+  const [sending, setSending] = useState(false);
+
+  const emptyData = () => {
+    setInfoForm({
+      name: { text: "", error: undefined },
+      email: { text: "", error: undefined },
+      phone: { text: "", error: undefined },
+    });
+  };
+
+  const emptyError = () => {
+    setInfoForm({
+      name: { ...infoForm.name, error: undefined },
+      email: { ...infoForm.email, error: undefined },
+      phone: { ...infoForm.phone, error: undefined },
+    });
+  };
+
+  const onSubmit = async () => {
+    let ok = true;
+
+    switch (true) {
+      case infoForm.name.text.length < 2:
+        setInfoForm({
+          ...infoForm,
+          name: { ...infoForm.name, error: "Veuillez entrer votre nom" },
+          email: { ...infoForm.name, error: undefined },
+          phone: { ...infoForm.name, error: undefined },
+        });
+        ok = false;
+        break;
+      case infoForm.email.text.length < 3:
+        setInfoForm({
+          ...infoForm,
+          email: { ...infoForm.email, error: "Veuillez entrer votre mail" },
+          name: { ...infoForm.name, error: undefined },
+          phone: { ...infoForm.name, error: undefined },
+        });
+        ok = false;
+        break;
+      case infoForm.phone.text.length < 4:
+        setInfoForm({
+          ...infoForm,
+          phone: {
+            ...infoForm.phone,
+            error: "Veuillez entrer un numéro de téléphone au format correct",
+          },
+          email: { ...infoForm.name, error: undefined },
+          name: { ...infoForm.name, error: undefined },
+        });
+        ok = false;
+        break;
+      default:
+        emptyError();
+    }
+
+    if (ok) {
+      setSending(true);
+      try {
+        await emailjs.send(
+          serviceID,
+          templateID,
+          {
+            name: infoForm.name.text,
+            phone: infoForm.phone.text,
+            email: infoForm.email.text,
+            message: "Formation",
+          },
+          {
+            publicKey: publicKey,
+          }
+        );
+        alert("Message envoyé ✅");
+        emptyData();
+      } catch (err: any) {
+        alert(
+          `Échec de l’envoi: ${err?.text || err?.message || "Erreur inconnue"}`
+        );
+      } finally {
+        setSending(false);
+      }
+    }
+  };
+
   return (
     <div className="w-full flex flex-col items-center">
       <TopMenu />
@@ -22,26 +129,49 @@ const TrainingPage = () => {
             />
           </div>
           <div className="flex flex-col w-full rounded-2xl bg-gray-300 p-6 gap-6">
-            <input
+            <CustomInput
               type="text"
-              placeholder="Nom"
-              className="p-4 rounded-xl w-full bg-white focus:outline-none"
+              placeholder="Entrez votre nom complet"
+              value={infoForm.name.text}
+              onchange={(e) => setInfoForm({ ...infoForm, name: { text: e } })}
+              errorMes={infoForm.name.error ?? ""}
             />
-            <input
+            <CustomInput
               type="email"
-              placeholder="Email"
-              className="p-4 rounded-xl w-full bg-white focus:outline-none"
+              placeholder="Entrez votre email"
+              value={infoForm.email.text}
+              onchange={(e) => setInfoForm({ ...infoForm, email: { text: e } })}
+              errorMes={infoForm.email.error ?? ""}
             />
-            <input
+            <CustomInput
               type="text"
-              placeholder="Numero: +237 XXX XXX XXX"
-              className="p-4 rounded-xl w-full bg-white focus:outline-none"
+              placeholder="+237 6XX XXX XXX"
+              value={infoForm.phone.text}
+              onchange={(e) => setInfoForm({ ...infoForm, phone: { text: e } })}
+              errorMes={infoForm.phone.error ?? ""}
             />
-            <button className="p-3 bg-secondary hover:bg-primary rounded-2xl font-semibold text-white">
-              Apply
+
+            <button
+              className="p-3 bg-secondary hover:bg-primary rounded-2xl font-semibold text-white flex justify-center items-center"
+              onClick={() => {
+                if (!sending) onSubmit();
+              }}
+            >
+              {sending ? (
+                <p className="animate-pulse">Loanding ...</p>
+              ) : (
+                <p>Contactez Nous</p>
+              )}
             </button>
-            <button className="p-3 bg-green-800 rounded-2xl font-semibold text-white hover:bg-green-900">
-              WhatSapp
+            <button
+              className="p-3 bg-green-800 rounded-2xl text-white hover:bg-green-900 cursor-pointer flex items-center justify-center gap-2"
+              onClick={() => ridarectToWhatsapp()}
+            >
+              <Icon
+                icon={"mingcute:whatsapp-line"}
+                className="text-white text-[24px]"
+              />
+              <p className="font-semibold text-lg">WhatSapp</p>
             </button>
           </div>
         </div>
