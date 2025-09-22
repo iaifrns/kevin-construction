@@ -25,8 +25,8 @@ function App() {
             <Route path={links.project} element={<ProjectPage />} />
             <Route path={links.ProjectDetail} element={<ProjectDetails />} />
             <Route path={links.Formation} element={<TrainingPage />} />
-            <Route path={links.serviceDetail} element={<ServiceDetail />} />
-            <Route path={links.detailTraining} element={<DetailTraining />} />
+            <Route path={"/service/detail/:index"} element={<ServiceDetail />} />
+            <Route path={"/formation/detail/:index"} element={<DetailTraining />} />
           </Route>
         </Routes>
       </BrowserRouter>

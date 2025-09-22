@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import MenuBar from "../../components/MenuBar";
@@ -7,11 +7,17 @@ import { images } from "../../constants/images";
 import { links } from "../../constants/links";
 import { detailServices } from "../../constants/services";
 import MiniGallery from "./components/MiniGallery";
+import { useParams } from "react-router-dom";
 
 const imgs = [images.HEROIMG, images.PROJECT1, images.IMG1, images.WHYUS2];
 
 const ServiceDetail = () => {
   const [i, setI] = useState(0);
+
+  const { index } = useParams<{ index: string }>();
+
+  useEffect(() => setI(index ? parseInt(index) : 0), [index]);
+
   return (
     <div className="w-full flex flex-col items-center gap-12">
       <div className="flex flex-col w-full">

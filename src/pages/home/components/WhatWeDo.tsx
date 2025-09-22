@@ -28,11 +28,13 @@ const WhatWeDo = () => {
             icon={services[0].icon}
             title={services[0].title}
             desc={services[0].desc}
+            ind={0}
           />
           <Service
             icon={services[1].icon}
             title={services[1].title}
             desc={services[1].desc}
+            ind={1}
           />
         </div>
         <div className="border-dotted border-3 border-secondary rounded-2xl p-8 flex flex-col gap-8">
@@ -53,11 +55,13 @@ const WhatWeDo = () => {
             icon={services[2].icon}
             title={services[2].title}
             desc={services[2].desc}
+            ind={2}
           />
           <Service
             icon={services[3].icon}
             title={services[3].title}
             desc={services[3].desc}
+            ind={3}
           />
         </div>
       </div>

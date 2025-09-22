@@ -10,6 +10,7 @@ import { ridarectToWhatsapp } from "../../helper/ridarectToWhatsapp";
 import { useState } from "react";
 import { CustomInput } from "../contactUs/components/ContactSection";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 
 const templateID = "template_357kjld";
 const serviceID = "service_2kye1s5";
@@ -114,6 +115,8 @@ const TrainingPage = () => {
     }
   };
 
+  const navigateTo = useNavigate()
+
   return (
     <div className="w-full flex flex-col items-center">
       <TopMenu />
@@ -193,12 +196,32 @@ const TrainingPage = () => {
             <div className="flex flex-col gap-3 w-full">
               {training.map((item, ind) => (
                 <div
-                  className="w-full rounded-2xl bg-bg1 p-4 flex gap-6 max-[500px]:flex-col-reverse"
+                  className="w-full rounded-2xl bg-bg1 p-4 flex gap-6 max-[500px]:flex-col-reverse cursor-default transition-all duration-300 ease-in-out hover:p-6"
                   key={item.title + ind}
+                  onClick={()=> navigateTo(links.detailTraining+ind)}
                 >
                   <div className="flex flex-col gap-2">
                     <p className="font-semibold text-xl">{item.title}</p>
                     <p className="text-subtext">{item.desc}</p>
+                    <div className="flex gap-2 items-center w-fit py-1 px-2 border rounded-2xl">
+                      <p className="text-sm font-bold">Plus</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        className="mt-1"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M4 12h2.5M20 12l-6-6m6 6l-6 6m6-6H9.5"
+                        />
+                      </svg>
+                    </div>
                   </div>
                   <img
                     src={item.img}

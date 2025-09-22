@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import MenuBar from "../../components/MenuBar";
 import TopMenu from "../../components/TopMenu";
@@ -11,13 +11,19 @@ import { ridarectToWhatsapp } from "../../helper/ridarectToWhatsapp";
 import { CustomInput } from "../contactUs/components/ContactSection";
 import emailjs from "@emailjs/browser";
 import Pointer from "../../components/Pointer";
+import { useParams } from "react-router-dom";
 
 const templateID = "template_357kjld";
 const serviceID = "service_2kye1s5";
 const publicKey = "69GnNN4nlG5ijDQs6";
 
 const DetailTraining = () => {
+
+  const {index} = useParams<{index:string}>()
+
   const [i, setI] = useState(0);
+
+  useEffect(() => setI(index ? parseInt(index) : 0),[index])
 
   const [infoForm, setInfoForm] = useState<
     Record<string, { text: string; error?: string }>
@@ -123,14 +129,14 @@ const DetailTraining = () => {
     <div className="w-full flex flex-col items-center gap-12 ">
       <div className="flex flex-col w-full items-center">
         <TopMenu />
-        <MenuBar active={links.service} />
+        <MenuBar active={links.Formation} />
         <Header
           title={trainingDetails[i].title}
           page="service/detail"
           img={images.SERVICEIMG1}
         />
         <div className="w-[90%] py-16 px-8 flex flex-col gap-8">
-          <div className="w-full flex gap-8">
+          <div className="w-full flex gap-8 max-[1035px]:flex-col-reverse">
             <div className="flex-2 flex flex-col gap-8 h-fit min-[1035px]:sticky top-2">
               <div className="border-dotted border-3 border-secondary rounded-2xl p-6">
                 <img

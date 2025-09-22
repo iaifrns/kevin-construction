@@ -6,10 +6,12 @@ const Service = ({
   title,
   icon,
   desc,
+  ind
 }: {
   title: string;
   icon: string;
   desc: string;
+  ind:number
 }) => {
   const navigateTo = useNavigate();
 
@@ -22,7 +24,7 @@ const Service = ({
       <p className="text-subtext">{desc}</p>
       <button
         className="bg-primary rounded-2xl text-white font-semibold font-poppins p-4"
-        onClick={() => navigateTo(links.serviceDetail)}
+        onClick={() => navigateTo(links.serviceDetail+ind)}
       >
         En savoir plus
       </button>
