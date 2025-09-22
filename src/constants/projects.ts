@@ -1,6 +1,6 @@
 import type { file } from "../type";
 import { paths } from "./files";
-import { images, imgAwai, imgGolf, imgHon, imgJapoma, imgOdza, imgPortaire, imgTrans, imgVKribi, imgWerner, imgYassa } from "./images";
+import { images, imgAwai, imgDuplexOdx, imgGolf, imgHon, imgJapoma, imgMidef, imgOdza, imgPortaire, imgTrans, imgVKribi, imgWerner, imgYassa } from "./images";
 
 const projects: {
   title1: string;
@@ -145,24 +145,24 @@ const projects1: {
     duration: "Deux (02) ans",
   },
   {
-    title1: "Japoma Complexe Sportif",
-    title2: "Projet de construction d’un complexe sportif à Japoma",
+    title1: "Duplex ODZA",
+    title2: "Projet de construction d’un duplex résidentiel",
     desc1:
-      "Le Projet du Stade de Japoma est un chantier emblématique de Douala, construit en 2 ans avec la participation de l’entreprise Leonardo et des experts techniques comme le Groupe Beaux Services. Ce complexe sportif intègre toutes les infrastructures modernes (stade, accès, réseaux techniques, station de traitement) et illustre l’expertise dans la réalisation d’ouvrages de grande envergure, répondant aux exigences internationales.",
-    img: imgJapoma,
-    path: paths.PROJECTJAPOMA,
-    location: "Douala – Quartier Japoma",
+      "Ce projet met en valeur la réalisation d’un duplex moderne et fonctionnel, intégrant un gros œuvre solide, des finitions de qualité et des installations électriques et sanitaires conformes aux normes, pour offrir confort et durabilité aux occupants.",
+    img: imgDuplexOdx,
+    path: paths.PROJECTDUPLEXODZ,
+    location: "Yaoundé – Odza",
     duration: "Deux (02) ans",
   },
   {
-    title1: "Japoma Complexe Sportif",
-    title2: "Projet de construction d’un complexe sportif à Japoma",
+    title1: "Projet MINTP (Ministère des Travaux Publics)",
+    title2: "Construction du Ministère des Travaux Publics (MINTP)",
     desc1:
-      "Le Projet du Stade de Japoma est un chantier emblématique de Douala, construit en 2 ans avec la participation de l’entreprise Leonardo et des experts techniques comme le Groupe Beaux Services. Ce complexe sportif intègre toutes les infrastructures modernes (stade, accès, réseaux techniques, station de traitement) et illustre l’expertise dans la réalisation d’ouvrages de grande envergure, répondant aux exigences internationales.",
-    img: imgJapoma,
-    path: paths.PROJECTJAPOMA,
-    location: "Douala – Quartier Japoma",
-    duration: "Deux (02) ans",
+      "Ce projet constitue une réalisation majeure en infrastructure administrative nationale, intégrant des techniques complexes et des installations modernes, avec un suivi rigoureux sur près de 8 ans pour livrer un bâtiment fonctionnel, durable et conforme aux standards internationaux.",
+    img: imgMidef,
+    path: paths.PROJECTMINDEF,
+    location: "Yaoundé – Etoudi",
+    duration: "(08) ans",
   },
 ];
 

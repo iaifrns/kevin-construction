@@ -4,11 +4,13 @@ import PROJETTRANS from "../assets/files/Résidence Transformateurs.pdf";
 import PROJETKRIBI from "../assets/files/Résidence kribi.pdf";
 import PROJECTPORT from "../assets/files/projet portaire.pdf";
 import PROJECTJAPOMA from "../assets/files/Stade de Japoma.pdf";
-import PROJECTODZA from "../assets/files/Résidence ODZA.pdf"
-import PROJECTAWAI from "../assets/files/Résidence AWAI.pdf"
-import PROJECTVILLAKRIBI from "../assets/files/Villa Kribi.pdf"
-import PROJECTHON from '../assets/files/R+7 – Hippodrome.pdf'
-import PROJECTWERNER from '../assets/files/Complexe hôtelier.pdf'
+import PROJECTODZA from "../assets/files/Résidence ODZA.pdf";
+import PROJECTAWAI from "../assets/files/Résidence AWAI.pdf";
+import PROJECTVILLAKRIBI from "../assets/files/Villa Kribi.pdf";
+import PROJECTHON from "../assets/files/R+7 – Hippodrome.pdf";
+import PROJECTWERNER from "../assets/files/Complexe hôtelier.pdf";
+import PROJECTDUPLEXODZ from "../assets/files/Duplex ODZA.pdf";
+import PROJECTMINDEF from "../assets/files/Projet MINTP.pdf";
 import type { file } from "../type";
 
 const paths: Record<string, file> = {
@@ -64,7 +66,17 @@ const paths: Record<string, file> = {
   },
   PROJECTWERNER: {
     url: PROJECTWERNER,
-    filename: "R+7 – Hippodrome.pdf",
+    filename: "Complexe hôtelier.pdf",
+    mimeType: "application/pdf",
+  },
+  PROJECTDUPLEXODZ: {
+    url: PROJECTDUPLEXODZ,
+    filename: "Duplex ODZA.pdf",
+    mimeType: "application/pdf",
+  },
+  PROJECTMINDEF: {
+    url: PROJECTMINDEF,
+    filename: "Projet MINTP.pdf",
     mimeType: "application/pdf",
   },
 };

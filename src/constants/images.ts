@@ -72,18 +72,30 @@ import VILLAK3 from "../assets/villa kribi/IMG-20241021-WA0079.jpg";
 import VILLAK4 from "../assets/villa kribi/WhatsApp Image 2024-05-21 at 19.57.19.jpeg";
 import VILLAK5 from "../assets/villa kribi/WhatsApp Image 2024-10-30 at 18.30.11(1).jpeg";
 import VILLAK6 from "../assets/villa kribi/WhatsApp Image 2025-02-11 at 10.06.44.jpeg";
-import HON1 from "../assets/hon/IMG_20220131_170553_559.jpg"
-import HON2 from "../assets/hon/IMG_20220717_154911_241.jpg"
-import HON3 from "../assets/hon/IMG_20220820_140315_658.jpg"
-import HON4 from "../assets/hon/IMG_20220820_140512_108.jpg"
-import HON5 from "../assets/hon/IMG_20230111_123455_301.jpg"
-import HON6 from "../assets/hon/IMG_20230111_125941_347.jpg"
-import WERNER1 from "../assets/werner house/final.png"
-import WERNER6 from "../assets/werner house/120870536_3447478895340844_8085297350507688370_n.jpg"
-import WERNER3 from "../assets/werner house/14686392_1325356427499253_45971580_n.jpg"
-import WERNER4 from "../assets/werner house/15218734_1374413752593520_1612678262_n.jpg"
-import WERNER5 from "../assets/werner house/20200308_095816.jpg"
-import WERNER2 from "../assets/werner house/Screenshot_20240422-194524.jpg"
+import HON1 from "../assets/hon/IMG_20220131_170553_559.jpg";
+import HON2 from "../assets/hon/IMG_20220717_154911_241.jpg";
+import HON3 from "../assets/hon/IMG_20220820_140315_658.jpg";
+import HON4 from "../assets/hon/IMG_20220820_140512_108.jpg";
+import HON5 from "../assets/hon/IMG_20230111_123455_301.jpg";
+import HON6 from "../assets/hon/IMG_20230111_125941_347.jpg";
+import WERNER1 from "../assets/werner house/final.png";
+import WERNER6 from "../assets/werner house/120870536_3447478895340844_8085297350507688370_n.jpg";
+import WERNER3 from "../assets/werner house/14686392_1325356427499253_45971580_n.jpg";
+import WERNER4 from "../assets/werner house/15218734_1374413752593520_1612678262_n.jpg";
+import WERNER5 from "../assets/werner house/20200308_095816.jpg";
+import WERNER2 from "../assets/werner house/Screenshot_20240422-194524.jpg";
+import DUPLEXODZ1 from "../assets/duplex odza/14657645_1394012410616500_828607761_n.jpg"
+import DUPLEXODZ2 from "../assets/duplex odza/20170523_074640.jpg"
+import DUPLEXODZ3 from "../assets/duplex odza/20170705_083030.jpg"
+import DUPLEXODZ4 from "../assets/duplex odza/IMG_20170121_174417.jpg"
+import DUPLEXODZ5 from "../assets/duplex odza/IMG_20250330_140503_566.jpg"
+import DUPLEXODZ6 from "../assets/duplex odza/IMG_20250330_140536_520.jpg"
+import MINDEF1 from "../assets/mindef/20210401_104402.jpg"
+import MINDEF2 from "../assets/mindef/FB_IMG_1721336128408.jpg"
+import MINDEF3 from "../assets/mindef/FB_IMG_1721336133169.jpg"
+import MINDEF4 from "../assets/mindef/IMG-20230831-WA0041.jpg"
+import MINDEF5 from "../assets/mindef/IMG_20161211_101323.jpg"
+import MINDEF6 from "../assets/mindef/IMG_20161212_091613.jpg"
 
 const images = {
   HEROIMG,
@@ -126,9 +138,13 @@ const imgAwai = [AWAI1, AWAI2, AWAI3, AWAI4, AWAI5, AWAI6];
 
 const imgVKribi = [VILLAK1, VILLAK2, VILLAK3, VILLAK4, VILLAK5, VILLAK6];
 
-const imgHon = [HON2,HON6,HON3,HON4,HON5,HON1]
+const imgHon = [HON2, HON6, HON3, HON4, HON5, HON1];
 
-const imgWerner = [WERNER1,WERNER2,WERNER3,WERNER4,WERNER5,WERNER6]
+const imgWerner = [WERNER1, WERNER2, WERNER3, WERNER4, WERNER5, WERNER6];
+
+const imgDuplexOdx = [DUPLEXODZ5,DUPLEXODZ1,DUPLEXODZ3,DUPLEXODZ4,DUPLEXODZ2,DUPLEXODZ6]
+
+const imgMidef = [MINDEF2,MINDEF3,MINDEF1,MINDEF4,MINDEF5,MINDEF6]
 
 export {
   images,
@@ -142,5 +158,7 @@ export {
   imgAwai,
   imgVKribi,
   imgHon,
-  imgWerner
+  imgWerner,
+  imgDuplexOdx,
+  imgMidef
 };
