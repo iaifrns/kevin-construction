@@ -1,6 +1,6 @@
 import type { file } from "../type";
 import { paths } from "./files";
-import { images, imgAwai, imgGolf, imgJapoma, imgOdza, imgPortaire, imgTrans, imgVKribi, imgYassa } from "./images";
+import { images, imgAwai, imgGolf, imgHon, imgJapoma, imgOdza, imgPortaire, imgTrans, imgVKribi, imgYassa } from "./images";
 
 const projects: {
   title1: string;
@@ -125,13 +125,13 @@ const projects1: {
     duration: "un (01) ans",
   },
   {
-    title1: "Japoma Complexe Sportif",
-    title2: "Projet de construction d’un complexe sportif à Japoma",
+    title1: "Immeuble R+7 – Hippodrome",
+    title2: "Projet de construction d’un immeuble R+7",
     desc1:
-      "Le Projet du Stade de Japoma est un chantier emblématique de Douala, construit en 2 ans avec la participation de l’entreprise Leonardo et des experts techniques comme le Groupe Beaux Services. Ce complexe sportif intègre toutes les infrastructures modernes (stade, accès, réseaux techniques, station de traitement) et illustre l’expertise dans la réalisation d’ouvrages de grande envergure, répondant aux exigences internationales.",
-    img: imgJapoma,
-    path: paths.PROJECTJAPOMA,
-    location: "Douala – Quartier Japoma",
+      "Ce projet illustre la réalisation d’un immeuble de grande envergure (R+7) en plein cœur de Yaoundé, avec un suivi rigoureux et des techniques modernes de gros œuvre pour garantir solidité, sécurité et durabilité.",
+    img: imgHon,
+    path: paths.PROJECTHON,
+    location: "Yaoundé – Hippodrome",
     duration: "Deux (02) ans",
   },
   {

@@ -72,6 +72,12 @@ import VILLAK3 from "../assets/villa kribi/IMG-20241021-WA0079.jpg";
 import VILLAK4 from "../assets/villa kribi/WhatsApp Image 2024-05-21 at 19.57.19.jpeg";
 import VILLAK5 from "../assets/villa kribi/WhatsApp Image 2024-10-30 at 18.30.11(1).jpeg";
 import VILLAK6 from "../assets/villa kribi/WhatsApp Image 2025-02-11 at 10.06.44.jpeg";
+import HON1 from "../assets/hon/IMG_20220131_170553_559.jpg"
+import HON2 from "../assets/hon/IMG_20220717_154911_241.jpg"
+import HON3 from "../assets/hon/IMG_20220820_140315_658.jpg"
+import HON4 from "../assets/hon/IMG_20220820_140512_108.jpg"
+import HON5 from "../assets/hon/IMG_20230111_123455_301.jpg"
+import HON6 from "../assets/hon/IMG_20230111_125941_347.jpg"
 
 const images = {
   HEROIMG,
@@ -114,6 +120,8 @@ const imgAwai = [AWAI1, AWAI2, AWAI3, AWAI4, AWAI5, AWAI6];
 
 const imgVKribi = [VILLAK1, VILLAK2, VILLAK3, VILLAK4, VILLAK5, VILLAK6];
 
+const imgHon = [HON2,HON6,HON3,HON4,HON5,HON1]
+
 export {
   images,
   imgGolf,
@@ -124,5 +132,6 @@ export {
   imgJapoma,
   imgOdza,
   imgAwai,
-  imgVKribi
+  imgVKribi,
+  imgHon
 };
