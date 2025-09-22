@@ -66,6 +66,12 @@ import AWAI3 from "../assets/awai/20210327_152352.jpg";
 import AWAI4 from "../assets/awai/IMG_20220716_181500_433.jpg";
 import AWAI5 from "../assets/awai/IMG_20250407_103112_022.jpg";
 import AWAI6 from "../assets/awai/IMG_20250407_103303_457.jpg";
+import VILLAK1 from "../assets/villa kribi/IMG-20240821-WA0158.jpg";
+import VILLAK2 from "../assets/villa kribi/IMG-20240510-WA0181.jpg";
+import VILLAK3 from "../assets/villa kribi/IMG-20241021-WA0079.jpg";
+import VILLAK4 from "../assets/villa kribi/WhatsApp Image 2024-05-21 at 19.57.19.jpeg";
+import VILLAK5 from "../assets/villa kribi/WhatsApp Image 2024-10-30 at 18.30.11(1).jpeg";
+import VILLAK6 from "../assets/villa kribi/WhatsApp Image 2025-02-11 at 10.06.44.jpeg";
 
 const images = {
   HEROIMG,
@@ -104,7 +110,9 @@ const imgJapoma = [JAPOMA1, JAPOMA2, JAPOMA3, JAPOMA4, JAPOMA5, JAPOMA6];
 
 const imgOdza = [ODZA1, ODZA2, ODZA3, ODZA4, ODZA5, ODZA6];
 
-const imgAwai = [AWAI1,AWAI2,AWAI3,AWAI4,AWAI5,AWAI6]
+const imgAwai = [AWAI1, AWAI2, AWAI3, AWAI4, AWAI5, AWAI6];
+
+const imgVKribi = [VILLAK1, VILLAK2, VILLAK3, VILLAK4, VILLAK5, VILLAK6];
 
 export {
   images,
@@ -115,5 +123,6 @@ export {
   imgPortaire,
   imgJapoma,
   imgOdza,
-  imgAwai
+  imgAwai,
+  imgVKribi
 };

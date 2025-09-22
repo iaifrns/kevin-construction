@@ -1,6 +1,6 @@
 import type { file } from "../type";
 import { paths } from "./files";
-import { images, imgAwai, imgGolf, imgJapoma, imgOdza, imgPortaire, imgTrans, imgYassa } from "./images";
+import { images, imgAwai, imgGolf, imgJapoma, imgOdza, imgPortaire, imgTrans, imgVKribi, imgYassa } from "./images";
 
 const projects: {
   title1: string;
@@ -115,14 +115,14 @@ const projects1: {
     duration: "Deux (02) ans",
   },
   {
-    title1: "Japoma Complexe Sportif",
-    title2: "Projet de construction d’un complexe sportif à Japoma",
+    title1: "Résidence privée – Villa Kribi",
+    title2: "Construction d’une résidence privée",
     desc1:
-      "Le Projet du Stade de Japoma est un chantier emblématique de Douala, construit en 2 ans avec la participation de l’entreprise Leonardo et des experts techniques comme le Groupe Beaux Services. Ce complexe sportif intègre toutes les infrastructures modernes (stade, accès, réseaux techniques, station de traitement) et illustre l’expertise dans la réalisation d’ouvrages de grande envergure, répondant aux exigences internationales.",
-    img: imgJapoma,
-    path: paths.PROJECTJAPOMA,
-    location: "Douala – Quartier Japoma",
-    duration: "Deux (02) ans",
+      "Ce projet démontre la réalisation d’une résidence complète et moderne, comprenant une villa principale, des annexes fonctionnelles et des infrastructures essentielles comme le forage et le château d’eau, garantissant autonomie et confort aux occupants.",
+    img: imgVKribi,
+    path: paths.PROJECTVILLAKRIBI,
+    location: "Kribi – Océan",
+    duration: "un (01) ans",
   },
   {
     title1: "Japoma Complexe Sportif",

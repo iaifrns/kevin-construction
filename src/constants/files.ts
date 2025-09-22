@@ -6,6 +6,7 @@ import PROJECTPORT from "../assets/files/projet portaire.pdf";
 import PROJECTJAPOMA from "../assets/files/Stade de Japoma.pdf";
 import PROJECTODZA from "../assets/files/Résidence ODZA.pdf"
 import PROJECTAWAI from "../assets/files/Résidence AWAI.pdf"
+import PROJECTVILLAKRIBI from "../assets/files/Villa Kribi.pdf"
 import type { file } from "../type";
 
 const paths: Record<string, file> = {
@@ -47,6 +48,11 @@ const paths: Record<string, file> = {
   PROJECTAWAI: {
     url: PROJECTAWAI,
     filename: "Résidence AWAI.pdf",
+    mimeType: "application/pdf",
+  },
+  PROJECTVILLAKRIBI: {
+    url: PROJECTVILLAKRIBI,
+    filename: "Villa Kribi.pdf",
     mimeType: "application/pdf",
   },
 };
