@@ -1,6 +1,6 @@
 import type { file } from "../type";
 import { paths } from "./files";
-import { images, imgGolf, imgJapoma, imgKribi, imgPortaire, imgTrans, imgYassa } from "./images";
+import { images, imgAwai, imgGolf, imgJapoma, imgOdza, imgPortaire, imgTrans, imgYassa } from "./images";
 
 const projects: {
   title1: string;
@@ -85,13 +85,73 @@ const projects1: {
     duration: "Trois (02) ans",
   },
   {
-    title1: "Projet Werner House",
-    title2: "Projet de construction d’un complexe hôtelier à Kribi",
+    title1: "Japoma Complexe Sportif",
+    title2: "Projet de construction d’un complexe sportif à Japoma",
     desc1:
-      "Le Projet Werner House est un complexe hôtelier moderne construit en 2 ans à Kribi. Réalisé par le Groupe Beaux Services, il illustre l’expertise de l’entreprise dans la réalisation de projets touristiques d’envergure, combinant solidité des structures, finitions raffinées et installations techniques de haut niveau.",
-    img: imgKribi,
-    path: paths.PROJETKRIBI,
-    location: "Sud – Kribi",
+      "Le Projet du Stade de Japoma est un chantier emblématique de Douala, construit en 2 ans avec la participation de l’entreprise Leonardo et des experts techniques comme le Groupe Beaux Services. Ce complexe sportif intègre toutes les infrastructures modernes (stade, accès, réseaux techniques, station de traitement) et illustre l’expertise dans la réalisation d’ouvrages de grande envergure, répondant aux exigences internationales.",
+    img: imgJapoma,
+    path: paths.PROJECTJAPOMA,
+    location: "Douala – Quartier Japoma",
+    duration: "Deux (02) ans",
+  },
+  {
+    title1: "PORT FOLIO – Résidence ODZA",
+    title2: "Résidence ODZA – Auberge Bleu",
+    desc1:
+      "ce projet illustre la capacité de l’entreprise à réaliser un complexe résidentiel complet et moderne, intégrant non seulement l’habitation principale (duplex), mais aussi des annexes haut de gamme (piscine, pergola, parking couvert)",
+    img: imgOdza,
+    path: paths.PROJECTODZA,
+    location: "Yaoundé – Odza",
+    duration: "Deux (02) ans",
+  },
+  {
+    title1: "Résidence AWAI",
+    title2: "Construction d’un duplex résidentiel avec annexes",
+    desc1:
+      "Ce projet illustre la réalisation d’un ensemble résidentiel complet et fonctionnel, intégrant un duplex moderne, des annexes utiles, un espace traditionnel (boukarou) pour la convivialité, ainsi qu’un parking couvert pour le confort des occupants.",
+    img: imgAwai,
+    path: paths.PROJECTAWAI,
+    location: "Yaoundé – Awai",
+    duration: "Deux (02) ans",
+  },
+  {
+    title1: "Japoma Complexe Sportif",
+    title2: "Projet de construction d’un complexe sportif à Japoma",
+    desc1:
+      "Le Projet du Stade de Japoma est un chantier emblématique de Douala, construit en 2 ans avec la participation de l’entreprise Leonardo et des experts techniques comme le Groupe Beaux Services. Ce complexe sportif intègre toutes les infrastructures modernes (stade, accès, réseaux techniques, station de traitement) et illustre l’expertise dans la réalisation d’ouvrages de grande envergure, répondant aux exigences internationales.",
+    img: imgJapoma,
+    path: paths.PROJECTJAPOMA,
+    location: "Douala – Quartier Japoma",
+    duration: "Deux (02) ans",
+  },
+  {
+    title1: "Japoma Complexe Sportif",
+    title2: "Projet de construction d’un complexe sportif à Japoma",
+    desc1:
+      "Le Projet du Stade de Japoma est un chantier emblématique de Douala, construit en 2 ans avec la participation de l’entreprise Leonardo et des experts techniques comme le Groupe Beaux Services. Ce complexe sportif intègre toutes les infrastructures modernes (stade, accès, réseaux techniques, station de traitement) et illustre l’expertise dans la réalisation d’ouvrages de grande envergure, répondant aux exigences internationales.",
+    img: imgJapoma,
+    path: paths.PROJECTJAPOMA,
+    location: "Douala – Quartier Japoma",
+    duration: "Deux (02) ans",
+  },
+  {
+    title1: "Japoma Complexe Sportif",
+    title2: "Projet de construction d’un complexe sportif à Japoma",
+    desc1:
+      "Le Projet du Stade de Japoma est un chantier emblématique de Douala, construit en 2 ans avec la participation de l’entreprise Leonardo et des experts techniques comme le Groupe Beaux Services. Ce complexe sportif intègre toutes les infrastructures modernes (stade, accès, réseaux techniques, station de traitement) et illustre l’expertise dans la réalisation d’ouvrages de grande envergure, répondant aux exigences internationales.",
+    img: imgJapoma,
+    path: paths.PROJECTJAPOMA,
+    location: "Douala – Quartier Japoma",
+    duration: "Deux (02) ans",
+  },
+  {
+    title1: "Japoma Complexe Sportif",
+    title2: "Projet de construction d’un complexe sportif à Japoma",
+    desc1:
+      "Le Projet du Stade de Japoma est un chantier emblématique de Douala, construit en 2 ans avec la participation de l’entreprise Leonardo et des experts techniques comme le Groupe Beaux Services. Ce complexe sportif intègre toutes les infrastructures modernes (stade, accès, réseaux techniques, station de traitement) et illustre l’expertise dans la réalisation d’ouvrages de grande envergure, répondant aux exigences internationales.",
+    img: imgJapoma,
+    path: paths.PROJECTJAPOMA,
+    location: "Douala – Quartier Japoma",
     duration: "Deux (02) ans",
   },
   {
@@ -107,3 +167,4 @@ const projects1: {
 ];
 
 export { projects, projects1 };
+

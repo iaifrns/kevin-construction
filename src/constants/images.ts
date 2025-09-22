@@ -48,12 +48,24 @@ import PORT3 from "../assets/industry/IMG_20180619_103355.jpg";
 import PORT4 from "../assets/industry/IMG_20180806_111406.jpg";
 import PORT5 from "../assets/industry/IMG_20190206_104526.jpg";
 import PORT6 from "../assets/industry/IMG_20190208_163640.jpg";
-import JAPOMA1 from "../assets/japoma/20170617_095218.jpg"
-import JAPOMA2 from "../assets/japoma/20181028_095755.jpg"
-import JAPOMA3 from "../assets/japoma/20181028_101443.jpg"
-import JAPOMA4 from "../assets/japoma/2222.jpg"
-import JAPOMA5 from "../assets/japoma/DJI_0677.00_09_10_10.Still006.jpg"
-import JAPOMA6 from "../assets/japoma/IMG_20190108_152706.jpg"
+import JAPOMA1 from "../assets/japoma/20170617_095218.jpg";
+import JAPOMA2 from "../assets/japoma/20181028_095755.jpg";
+import JAPOMA3 from "../assets/japoma/20181028_101443.jpg";
+import JAPOMA4 from "../assets/japoma/2222.jpg";
+import JAPOMA5 from "../assets/japoma/DJI_0677.00_09_10_10.Still006.jpg";
+import JAPOMA6 from "../assets/japoma/IMG_20190108_152706.jpg";
+import ODZA1 from "../assets/odza/Alain rendu (2).png";
+import ODZA2 from "../assets/odza/IMG_20230212_102528_898.jpg";
+import ODZA3 from "../assets/odza/IMG_20230514_125737_644.jpg";
+import ODZA4 from "../assets/odza/IMG_20230514_132917_126.jpg";
+import ODZA5 from "../assets/odza/IMG_20230611_140212_976.jpg";
+import ODZA6 from "../assets/odza/IMG_20240316_155143_067.jpg";
+import AWAI1 from "../assets/awai/01 RénoH MOD.jpg";
+import AWAI2 from "../assets/awai/20201024_160816.jpg";
+import AWAI3 from "../assets/awai/20210327_152352.jpg";
+import AWAI4 from "../assets/awai/IMG_20220716_181500_433.jpg";
+import AWAI5 from "../assets/awai/IMG_20250407_103112_022.jpg";
+import AWAI6 from "../assets/awai/IMG_20250407_103303_457.jpg";
 
 const images = {
   HEROIMG,
@@ -88,6 +100,20 @@ const imgKribi = [KRIBI1, KRIBI3, KRIBI4, KRIBI2, KRIBI5, KRIBI6];
 
 const imgPortaire = [PORT1, PORT2, PORT3, PORT4, PORT5, PORT6];
 
-const imgJapoma = [JAPOMA1,JAPOMA2,JAPOMA3,JAPOMA4,JAPOMA5,JAPOMA6]
+const imgJapoma = [JAPOMA1, JAPOMA2, JAPOMA3, JAPOMA4, JAPOMA5, JAPOMA6];
 
-export { images, imgGolf, imgYassa, imgTrans, imgKribi, imgPortaire, imgJapoma };
+const imgOdza = [ODZA1, ODZA2, ODZA3, ODZA4, ODZA5, ODZA6];
+
+const imgAwai = [AWAI1,AWAI2,AWAI3,AWAI4,AWAI5,AWAI6]
+
+export {
+  images,
+  imgGolf,
+  imgYassa,
+  imgTrans,
+  imgKribi,
+  imgPortaire,
+  imgJapoma,
+  imgOdza,
+  imgAwai
+};

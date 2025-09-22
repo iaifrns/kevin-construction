@@ -16,8 +16,8 @@ const ProjectDetails = () => {
   const {projet} = useContext(MobileContext)
 
   useEffect(() => {
-    extract(paths.PROJETGOLF);
-  }, []);
+    extract(projet.path ?? paths.PROJECTGOLF);
+  }, [projet]);
 
   const fullText = useMemo(
     () => pages.map((p) => p.text).join("\n\n"),
