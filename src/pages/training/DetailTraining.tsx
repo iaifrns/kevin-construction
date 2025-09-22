@@ -200,7 +200,7 @@ const DetailTraining = () => {
             </div>
             <div className="flex-3 flex flex-col gap-4">
               <div>
-                <p className="text-titletext font-bold font-poppins text-[40px]">
+                <p className="text-titletext font-bold font-poppins text-[40px] max-[1035px]:text-[28px]">
                   {trainingDetails[i].title}
                 </p>
                 <p className="text-lg text-subtext">
@@ -227,14 +227,14 @@ const DetailTraining = () => {
                   <>
                     {ind != i && (
                       <div
-                        className="flex gap-4 items-center transition-all duration-300 ease-out p-2 hover:bg-gray-200 hover:p-3 rounded-xl cursor-default"
+                        className="flex max-[1035px]:flex-col gap-4 items-center transition-all duration-300 ease-out p-2 hover:bg-gray-200 hover:p-3 rounded-xl cursor-default"
                         key={ind + detail.title}
                         onClick={() => handleClick(ind)}
                       >
                         <img
                           src={detail.img}
                           alt={detail.img}
-                          className="w-[200px] h-[200px] object-cover"
+                          className="w-[200px] max-[1035px]:w-full h-[200px] object-cover"
                         />
                         <div className="flex flex-col gap-2">
                           <p className="text-2xl font-poppins font-bold">
