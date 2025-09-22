@@ -1,6 +1,6 @@
 import type { file } from "../type";
 import { paths } from "./files";
-import { images, imgAwai, imgGolf, imgHon, imgJapoma, imgOdza, imgPortaire, imgTrans, imgVKribi, imgYassa } from "./images";
+import { images, imgAwai, imgGolf, imgHon, imgJapoma, imgOdza, imgPortaire, imgTrans, imgVKribi, imgWerner, imgYassa } from "./images";
 
 const projects: {
   title1: string;
@@ -135,13 +135,13 @@ const projects1: {
     duration: "Deux (02) ans",
   },
   {
-    title1: "Japoma Complexe Sportif",
-    title2: "Projet de construction d’un complexe sportif à Japoma",
+    title1: "WERNER HOUSE – Complexe hôtelier",
+    title2: "Construction d’un complexe hôtelier",
     desc1:
-      "Le Projet du Stade de Japoma est un chantier emblématique de Douala, construit en 2 ans avec la participation de l’entreprise Leonardo et des experts techniques comme le Groupe Beaux Services. Ce complexe sportif intègre toutes les infrastructures modernes (stade, accès, réseaux techniques, station de traitement) et illustre l’expertise dans la réalisation d’ouvrages de grande envergure, répondant aux exigences internationales.",
-    img: imgJapoma,
-    path: paths.PROJECTJAPOMA,
-    location: "Douala – Quartier Japoma",
+      "Ce projet illustre la réalisation complète d’un complexe hôtelier moderne à Kribi, combinant gros œuvre, finitions haut de gamme, réseaux électriques et plomberie, afin d’offrir un cadre confortable, durable et conforme aux standards hôteliers.",
+    img: imgWerner,
+    path: paths.PROJECTWERNER,
+    location: "Sud – Kribi",
     duration: "Deux (02) ans",
   },
   {

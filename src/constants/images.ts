@@ -78,6 +78,12 @@ import HON3 from "../assets/hon/IMG_20220820_140315_658.jpg"
 import HON4 from "../assets/hon/IMG_20220820_140512_108.jpg"
 import HON5 from "../assets/hon/IMG_20230111_123455_301.jpg"
 import HON6 from "../assets/hon/IMG_20230111_125941_347.jpg"
+import WERNER1 from "../assets/werner house/final.png"
+import WERNER6 from "../assets/werner house/120870536_3447478895340844_8085297350507688370_n.jpg"
+import WERNER3 from "../assets/werner house/14686392_1325356427499253_45971580_n.jpg"
+import WERNER4 from "../assets/werner house/15218734_1374413752593520_1612678262_n.jpg"
+import WERNER5 from "../assets/werner house/20200308_095816.jpg"
+import WERNER2 from "../assets/werner house/Screenshot_20240422-194524.jpg"
 
 const images = {
   HEROIMG,
@@ -122,6 +128,8 @@ const imgVKribi = [VILLAK1, VILLAK2, VILLAK3, VILLAK4, VILLAK5, VILLAK6];
 
 const imgHon = [HON2,HON6,HON3,HON4,HON5,HON1]
 
+const imgWerner = [WERNER1,WERNER2,WERNER3,WERNER4,WERNER5,WERNER6]
+
 export {
   images,
   imgGolf,
@@ -133,5 +141,6 @@ export {
   imgOdza,
   imgAwai,
   imgVKribi,
-  imgHon
+  imgHon,
+  imgWerner
 };

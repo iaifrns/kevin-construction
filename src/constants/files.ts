@@ -8,6 +8,7 @@ import PROJECTODZA from "../assets/files/Résidence ODZA.pdf"
 import PROJECTAWAI from "../assets/files/Résidence AWAI.pdf"
 import PROJECTVILLAKRIBI from "../assets/files/Villa Kribi.pdf"
 import PROJECTHON from '../assets/files/R+7 – Hippodrome.pdf'
+import PROJECTWERNER from '../assets/files/Complexe hôtelier.pdf'
 import type { file } from "../type";
 
 const paths: Record<string, file> = {
@@ -58,6 +59,11 @@ const paths: Record<string, file> = {
   },
   PROJECTHON: {
     url: PROJECTHON,
+    filename: "R+7 – Hippodrome.pdf",
+    mimeType: "application/pdf",
+  },
+  PROJECTWERNER: {
+    url: PROJECTWERNER,
     filename: "R+7 – Hippodrome.pdf",
     mimeType: "application/pdf",
   },
