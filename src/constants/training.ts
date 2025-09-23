@@ -1,41 +1,41 @@
-import { images, imgGolf, imgKribi } from "./images";
+import { images } from "./images";
 
 const training: { title: string; desc: string; img: string }[] = [
   {
     title: "Ouvriers spécialisés (maçonnerie, coffrage, ferraillage...)",
     desc: "Formation pratique pour maîtriser les techniques essentielles du gros œuvre et devenir un professionnel recherché sur les chantiers.",
-    img: images.HEROIMG,
+    img: images.COURSE1,
   },
   {
     title: "Étanchéité",
     desc: "Apprenez les méthodes modernes pour protéger efficacement les bâtiments contre l’eau et l’humidité, avec une expertise directement applicable.",
-    img: imgGolf[5],
+    img: images.COURSE2,
   },
   {
     title: "Menuiserie (aluminium, ferronnerie, bois)",
     desc: "Développez vos compétences en fabrication et pose de menuiseries, en combinant savoir-faire traditionnel et technologies modernes.",
-    img: images.IMG3,
+    img: images.COURSE3,
   },
   {
     title:
       "Revêtements sols et murs (carrelage, résine, parquet, béton imprimé)",
     desc: "Découvrez les techniques de pose et de finition pour offrir des espaces esthétiques, durables et adaptés aux tendances actuelles.",
-    img: imgKribi[3],
+    img: images.COURSE4,
   },
   {
     title: "Peinture et décorations diverses",
     desc: "Initiez-vous aux techniques de peinture et de décoration pour donner style, couleur et personnalité à tout type d’ouvrage.",
-    img: imgGolf[1],
+    img: images.COURSE5,
   },
   {
     title: "Informatique et secrétariat bureautique",
     desc: "Formation complète pour maîtriser les outils bureautiques et renforcer vos compétences en gestion administrative moderne.",
-    img: images.IMG1,
+    img: images.COURSE6,
   },
   {
     title: "Sécurité et hygiène de la construction",
     desc: "Apprenez les bonnes pratiques de sécurité et d’hygiène afin de garantir des chantiers sûrs, conformes aux normes et respectueux des travailleurs.",
-    img: imgKribi[2],
+    img: images.COURSE7,
   },
 ];
 
@@ -47,7 +47,7 @@ const trainingDetails: {
 }[] = [
   {
     title: "Ouvriers spécialisés (maçonnerie, coffrage, ferraillage...)",
-    img: images.HEROIMG,
+    img: images.COURSE1,
     desc: "Cette formation pratique plonge les stagiaires dans les réalités du gros œuvre. Encadrés par des professionnels expérimentés, ils apprennent les bases et perfectionnent les techniques de maçonnerie, de coffrage et de ferraillage à travers des ateliers et des mises en situation réelles sur chantier. L’objectif est de former des ouvriers qualifiés, capables d’intégrer immédiatement le marché du travail.",
     points: [
       {
@@ -74,7 +74,7 @@ const trainingDetails: {
   },
   {
     title: "Étanchéité",
-    img: imgGolf[5],
+    img: images.COURSE2,
     desc: "La maîtrise de l’étanchéité est essentielle pour garantir la durabilité des bâtiments. Cette formation enseigne les méthodes modernes de prévention et de correction des infiltrations d’eau. Les stagiaires participent à des exercices pratiques sur des toitures, terrasses et fondations pour développer des compétences directement applicables dans la construction et la rénovation.",
     points: [
       {
@@ -101,7 +101,7 @@ const trainingDetails: {
   },
   {
     title: "Menuiserie (aluminium, ferronnerie, bois)",
-    img: images.IMG3,
+    img: images.COURSE3,
     desc: "Cette formation polyvalente initie les stagiaires aux métiers de la menuiserie bois, aluminium et ferronnerie. Grâce à des ateliers pratiques, ils acquièrent les compétences pour fabriquer, assembler et poser des menuiseries modernes et traditionnelles. Les travaux se déroulent sur de véritables projets afin de leur donner une expérience concrète du métier.",
     points: [
       {
@@ -129,7 +129,7 @@ const trainingDetails: {
   {
     title:
       "Revêtements sols et murs (carrelage, résine, parquet, béton imprimé)",
-    img: imgKribi[3],
+    img: images.COURSE4,
     desc: "Ce module met l’accent sur les techniques de revêtement des sols et murs afin de garantir esthétique et durabilité. Les stagiaires réalisent des travaux pratiques sur différents matériaux et apprennent à appliquer les méthodes modernes de pose et de finition. L’objectif est de former des professionnels capables de transformer des espaces en alliant solidité et design.",
     points: [
       {
@@ -156,7 +156,7 @@ const trainingDetails: {
   },
   {
     title: "Peinture et décorations diverses",
-    img: imgGolf[1],
+    img: images.COURSE5,
     desc: "Une formation pratique qui permet aux stagiaires de maîtriser les techniques de peinture et de décoration intérieure et extérieure. Grâce à des ateliers dirigés, ils apprennent à préparer les supports, appliquer les différentes peintures et réaliser des décorations modernes. Chaque stagiaire est mis en situation sur des projets réels pour développer créativité et rigueur.",
     points: [
       {
@@ -183,7 +183,7 @@ const trainingDetails: {
   },
   {
     title: "Informatique et secrétariat bureautique",
-    img: images.IMG1,
+    img: images.COURSE6,
     desc: "Ce module forme les stagiaires aux outils numériques indispensables dans le monde professionnel. Grâce à des exercices pratiques, ils apprennent à maîtriser les logiciels bureautiques, à gérer des documents administratifs et à assurer une communication efficace. La formation met l’accent sur des mises en situation pour préparer les participants à des postes de gestion et de support administratif.",
     points: [
       {
@@ -210,7 +210,7 @@ const trainingDetails: {
   },
   {
     title: "Sécurité et hygiène de la construction",
-    img: imgKribi[2],
+    img: images.COURSE7,
     desc: "La sécurité étant une priorité absolue sur les chantiers, cette formation prépare les stagiaires à adopter les bons réflexes pour prévenir les accidents et garantir des conditions de travail sûres. Grâce à des ateliers pratiques et des simulations d’incidents, ils apprennent à appliquer les normes de sécurité et d’hygiène de manière efficace.",
     points: [
       {
@@ -238,3 +238,4 @@ const trainingDetails: {
 ];
 
 export { training, trainingDetails };
+

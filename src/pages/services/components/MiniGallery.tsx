@@ -1,12 +1,12 @@
-import { images } from "../../../constants/images";
+import { imgAwai, imgDuplexOdx, imgJapoma, imgMidef, imgVKribi, imgWerner } from "../../../constants/images";
 
 const imgs = [
-  images.ABOUT1,
-  images.PROJECT1,
-  images.PROJECT3,
-  images.HEROIMG,
-  images.ABOUT2,
-  images.WHYUS2,
+  imgAwai[1],
+  imgJapoma[1],
+  imgDuplexOdx[0],
+  imgWerner[0],
+  imgMidef[0],
+  imgVKribi[1],
 ];
 
 const MiniGallery = () => {

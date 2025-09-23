@@ -22,7 +22,6 @@ const Testimonies = () => {
         {testimonies.map((testimony, ind) => (
           <Testimony
             key={testimony.title + ind}
-            img={testimony.img}
             title={testimony.title}
             message={testimony.message}
             name={testimony.name}

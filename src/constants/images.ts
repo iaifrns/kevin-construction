@@ -84,18 +84,26 @@ import WERNER3 from "../assets/werner house/14686392_1325356427499253_45971580_n
 import WERNER4 from "../assets/werner house/15218734_1374413752593520_1612678262_n.jpg";
 import WERNER5 from "../assets/werner house/20200308_095816.jpg";
 import WERNER2 from "../assets/werner house/Screenshot_20240422-194524.jpg";
-import DUPLEXODZ1 from "../assets/duplex odza/14657645_1394012410616500_828607761_n.jpg"
-import DUPLEXODZ2 from "../assets/duplex odza/20170523_074640.jpg"
-import DUPLEXODZ3 from "../assets/duplex odza/20170705_083030.jpg"
-import DUPLEXODZ4 from "../assets/duplex odza/IMG_20170121_174417.jpg"
-import DUPLEXODZ5 from "../assets/duplex odza/IMG_20250330_140503_566.jpg"
-import DUPLEXODZ6 from "../assets/duplex odza/IMG_20250330_140536_520.jpg"
-import MINDEF1 from "../assets/mindef/20210401_104402.jpg"
-import MINDEF2 from "../assets/mindef/FB_IMG_1721336128408.jpg"
-import MINDEF3 from "../assets/mindef/FB_IMG_1721336133169.jpg"
-import MINDEF4 from "../assets/mindef/IMG-20230831-WA0041.jpg"
-import MINDEF5 from "../assets/mindef/IMG_20161211_101323.jpg"
-import MINDEF6 from "../assets/mindef/IMG_20161212_091613.jpg"
+import DUPLEXODZ1 from "../assets/duplex odza/14657645_1394012410616500_828607761_n.jpg";
+import DUPLEXODZ2 from "../assets/duplex odza/20170523_074640.jpg";
+import DUPLEXODZ3 from "../assets/duplex odza/20170705_083030.jpg";
+import DUPLEXODZ4 from "../assets/duplex odza/IMG_20170121_174417.jpg";
+import DUPLEXODZ5 from "../assets/duplex odza/IMG_20250330_140503_566.jpg";
+import DUPLEXODZ6 from "../assets/duplex odza/IMG_20250330_140536_520.jpg";
+import MINDEF1 from "../assets/mindef/20210401_104402.jpg";
+import MINDEF2 from "../assets/mindef/FB_IMG_1721336128408.jpg";
+import MINDEF3 from "../assets/mindef/FB_IMG_1721336133169.jpg";
+import MINDEF4 from "../assets/mindef/IMG-20230831-WA0041.jpg";
+import MINDEF5 from "../assets/mindef/IMG_20161211_101323.jpg";
+import MINDEF6 from "../assets/mindef/IMG_20161212_091613.jpg";
+import USERLOGO from "../assets/userlogo.png";
+import COURSE1 from "../assets/ChatGPT Image Sep 23, 2025, 02_34_16 PM.png";
+import COURSE2 from "../assets/ChatGPT Image Sep 23, 2025, 02_41_07 PM.png";
+import COURSE3 from "../assets/ChatGPT Image Sep 23, 2025, 02_47_19 PM.png";
+import COURSE4 from "../assets/ChatGPT Image Sep 23, 2025, 02_55_08 PM.png";
+import COURSE5 from "../assets/ChatGPT Image Sep 23, 2025, 03_05_59 PM.png";
+import COURSE6 from "../assets/ChatGPT Image Sep 23, 2025, 03_14_11 PM.png";
+import COURSE7 from "../assets/ChatGPT Image Sep 23, 2025, 03_23_48 PM.png";
 
 const images = {
   HEROIMG,
@@ -118,6 +126,14 @@ const images = {
   IMG2,
   IMG3,
   AVATAR1,
+  USERLOGO,
+  COURSE1,
+  COURSE2,
+  COURSE3,
+  COURSE4,
+  COURSE5,
+  COURSE6,
+  COURSE7,
 };
 
 const imgGolf = [GOLF1, GOLF2, GOLF3, GOLF4, GOLF5, GOLF6];
@@ -142,9 +158,16 @@ const imgHon = [HON5, HON6, HON3, HON4, HON2, HON1];
 
 const imgWerner = [WERNER1, WERNER2, WERNER3, WERNER4, WERNER5, WERNER6];
 
-const imgDuplexOdx = [DUPLEXODZ5,DUPLEXODZ1,DUPLEXODZ3,DUPLEXODZ4,DUPLEXODZ2,DUPLEXODZ6]
+const imgDuplexOdx = [
+  DUPLEXODZ5,
+  DUPLEXODZ1,
+  DUPLEXODZ3,
+  DUPLEXODZ4,
+  DUPLEXODZ2,
+  DUPLEXODZ6,
+];
 
-const imgMidef = [MINDEF2,MINDEF3,MINDEF1,MINDEF4,MINDEF5,MINDEF6]
+const imgMidef = [MINDEF2, MINDEF3, MINDEF1, MINDEF4, MINDEF5, MINDEF6];
 
 export {
   images,
@@ -160,5 +183,5 @@ export {
   imgHon,
   imgWerner,
   imgDuplexOdx,
-  imgMidef
+  imgMidef,
 };

@@ -1,12 +1,11 @@
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
+import { images } from "../constants/images";
 
 const Testimony = ({
-  img,
   name,
   title,
   message,
 }: {
-  img: string;
   name: string;
   title: string;
   message: string;
@@ -17,8 +16,8 @@ const Testimony = ({
         <div className="flex justify-between items-center">
           <div className="flex gap-2 items-center">
             <img
-              src={img}
-              alt={img}
+              src={images.USERLOGO}
+              alt={images.USERLOGO}
               className="w-15 h-15 rounded-full object-cover"
             />
             <div className="flex flex-col">
