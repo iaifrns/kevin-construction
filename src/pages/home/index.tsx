@@ -1,19 +1,22 @@
+import { useNavigate } from "react-router-dom";
+import Footer from "../../components/Footer";
 import MenuBar from "../../components/MenuBar";
 import TopMenu from "../../components/TopMenu";
-import { images } from "../../constants/images";
+import {
+  images,
+  imgWerner
+} from "../../constants/images";
 import { links } from "../../constants/links";
 import AboutUs from "./components/AboutUs";
+import FAQ from "./components/FAQ";
 import HeaderSection from "./components/HeaderSection";
 import ImagePost from "./components/ImagePost";
+import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Statistiques from "./components/Statistiques";
+import Testimonies from "./components/Testimonies";
 import WhatWeDo from "./components/WhatWeDo";
 import WhyChooseUs from "./components/WhyChooseUs";
-import Projects from "./components/Projects";
-import Testimonies from "./components/Testimonies";
-import FAQ from "./components/FAQ";
-import Footer from "../../components/Footer";
-import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const navigateTo = useNavigate();
@@ -33,8 +36,7 @@ const HomePage = () => {
               Groupe Beaux Services (G.B.S.) est une entreprise camerounaise de
               Bâtiments et Travaux Publics (BTP) spécialisée dans la conception,
               l’étude et la réalisation d’ouvrages de génie civil. Son siège
-              social est basé à Yaoundé, avec une direction technique à
-              Douala.
+              social est basé à Yaoundé, avec une direction technique à Douala.
             </p>
             <div className="flex gap-4 items-center">
               <button
@@ -52,7 +54,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <ImagePost img={images.PROJECT3} />
+        <ImagePost img={imgWerner[1]} />
         <Statistiques />
         <Services />
         <AboutUs />

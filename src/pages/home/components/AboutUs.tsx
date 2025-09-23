@@ -1,5 +1,5 @@
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
-import { images } from "../../../constants/images";
+import { images, imgKribi, imgMidef } from "../../../constants/images";
 import { links } from "../../../constants/links";
 import { useNavigate } from "react-router-dom";
 
@@ -32,12 +32,12 @@ const AboutUs = () => {
       <div className="relative flex-1 max-md:w-full ">
         <div className="w-full min-[800px]:h-[95%] flex p-6 items-center justify-between border-dotted border-secondary border-3 rounded-2xl max-[800px]:flex-col">
           <img
-            src={images.ABOUT1}
+            src={imgKribi[1]}
             alt={images.ABOUT1}
             className="object-cover max-[800px]:w-full w-[48%] h-full min-[1035px]:h-[550px] rounded-2xl max-[800px]:h-[450px]"
           />
           <img
-            src={images.ABOUT2}
+            src={imgMidef[0]}
             alt={images.ABOUT2}
             className="object-cover max-[800px]:w-full w-[48%] h-full rounded-2xl min-[1035px]:h-[550px] max-[800px]:h-[450px]"
           />

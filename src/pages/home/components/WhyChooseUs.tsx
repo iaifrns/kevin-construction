@@ -1,6 +1,6 @@
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
 import { stats2 } from "../../../constants/data";
-import { images } from "../../../constants/images";
+import { images, imgGolf } from "../../../constants/images";
 
 const WhyChooseUs = () => {
   return (
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
         </div>
         <div className="w-full h-full flex flex-col gap-4 p-8">
           <img
-            src={images.WHYUS1}
+            src={imgGolf[1]}
             alt={images.WHYUS1}
             className="rounded-2xl h-[250px] object-cover"
           />

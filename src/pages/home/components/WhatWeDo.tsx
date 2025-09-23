@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Service from "../../../components/Service";
-import { images } from "../../../constants/images";
+import { images, imgJapoma } from "../../../constants/images";
 import { services } from "../../../constants/services";
 import { links } from "../../../constants/links";
 
@@ -39,7 +39,7 @@ const WhatWeDo = () => {
         </div>
         <div className="border-dotted border-3 border-secondary rounded-2xl p-8 flex flex-col gap-8">
           <img
-            src={images.SERVICEIMG1}
+            src={imgJapoma[0]}
             alt={images.SERVICEIMG1}
             className="rounded-2xl h-full object-cover max-w-[400px]"
           />
