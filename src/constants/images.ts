@@ -104,6 +104,10 @@ import COURSE4 from "../assets/ChatGPT Image Sep 23, 2025, 02_55_08 PM.png";
 import COURSE5 from "../assets/ChatGPT Image Sep 23, 2025, 03_05_59 PM.png";
 import COURSE6 from "../assets/ChatGPT Image Sep 23, 2025, 03_14_11 PM.png";
 import COURSE7 from "../assets/ChatGPT Image Sep 23, 2025, 03_23_48 PM.png";
+import SERVICE1 from "../assets/ChatGPT Image Sep 23, 2025, 03_38_27 PM.png";
+import SERVICE2 from "../assets/ChatGPT Image Sep 23, 2025, 03_44_37 PM.png";
+import SERVICE3 from "../assets/ChatGPT Image Sep 23, 2025, 03_47_39 PM.png";
+import SERVICE4 from "../assets/ChatGPT Image Sep 23, 2025, 03_51_07 PM.png";
 
 const images = {
   HEROIMG,
@@ -134,6 +138,10 @@ const images = {
   COURSE5,
   COURSE6,
   COURSE7,
+  SERVICE1,
+  SERVICE2,
+  SERVICE3,
+  SERVICE4,
 };
 
 const imgGolf = [GOLF1, GOLF2, GOLF3, GOLF4, GOLF5, GOLF6];
