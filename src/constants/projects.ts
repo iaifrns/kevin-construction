@@ -155,14 +155,14 @@ const projects1: {
     duration: "Deux (02) ans",
   },
   {
-    title1: "Projet MINTP (Ministère des Travaux Publics)",
-    title2: "Construction du Ministère des Travaux Publics (MINTP)",
+    title1: "Foyer des Jeunes de Mbandjock",
+    title2: "Construction du Foyer des Jeunes de Mbandjock",
     desc1:
-      "Ce projet constitue une réalisation majeure en infrastructure administrative nationale, intégrant des techniques complexes et des installations modernes, avec un suivi rigoureux sur près de 8 ans pour livrer un bâtiment fonctionnel, durable et conforme aux standards internationaux.",
+      "Ce projet a permis de livrer un espace communautaire moderne et fonctionnel, dédié aux jeunes de Mbandjock, en garantissant la qualité des ouvrages et la satisfaction du maître d’ouvrage.",
     img: imgMidef,
     path: paths.PROJECTMINDEF,
-    location: "Yaoundé – Etoudi",
-    duration: "(08) ans",
+    location: "Mbandjock – Cameroun",
+    duration: "(02) ans",
   },
 ];
 
