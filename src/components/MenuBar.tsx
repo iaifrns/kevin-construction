@@ -12,10 +12,11 @@ const MenuBar = ({ active }: { active: string }) => {
   return (
     <div className="w-full px-8 py-6 bg-primary flex justify-between items-center">
       <div className="flex items-center justify-center">
-        <img src={images.LOGO} alt={images.LOGO} className="w-[52px]" />
-        <div className="flex flex-col ">
-          <span className="text-[40px] max-[500px]:text-3xl font-poppins text-white font-bold">
-            G.B.S GROUPE
+        <img src={images.LOGO} alt={images.LOGO} className="w-[65px]" />
+        <div className="flex flex-col w-[270px]">
+          <span className="text-[28px] max-[500px]:text-3xl font-poppins text-white font-bold space-y-0">
+            <p className="mb-0 leading-tight">Groupe Beaux</p>
+            <p className="mb-0 leading-snug">Services (GBS)</p> 
           </span>
           {/* <span className="font-poppins font-semibold text-white">
             CONSTRUCTION COMPANY

@@ -13,7 +13,8 @@ import TEAM2 from "../assets/Team-Image-3.jpg";
 import TEAM3 from "../assets/Team-Image-6.jpg";
 import TEAM4 from "../assets/Team-Image-7.jpg";
 import CONTACTIMG1 from "../assets/412.jpg";
-import LOGO from "../assets/Design sans titre(5).png";
+import LOGO from "../assets/logo gbs groupe.png";
+import LOGO1 from "../assets/Design sans titre(5).png";
 import IMG1 from "../assets/26991695_1981206938868614_4603266858185040058_n.jpg";
 import IMG2 from "../assets/20181028_095439.jpg";
 import IMG3 from "../assets/20181028_102250.jpg";
@@ -123,6 +124,7 @@ const images = {
   TEAM4,
   CONTACTIMG1,
   LOGO,
+  LOGO1,
   PROJECT1,
   PROJECT2,
   PROJECT3,
