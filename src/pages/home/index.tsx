@@ -14,9 +14,15 @@ import Statistiques from "./components/Statistiques";
 import Testimonies from "./components/Testimonies";
 import WhatWeDo from "./components/WhatWeDo";
 import WhyChooseUs from "./components/WhyChooseUs";
+import useLoadImgs from "../../hooks/useLoadImgs";
+import Loader from "../../components/Loader";
 
 const HomePage = () => {
-  const navigateTo = useNavigate();
+  const navigateTo = useNavigate()
+
+  const loader = useLoadImgs()
+
+  if(loader) (<Loader />)
 
   return (
     <div className="m-0 p-0 flex flex-col w-full">

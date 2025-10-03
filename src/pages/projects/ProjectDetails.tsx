@@ -10,6 +10,7 @@ import { MobileContext } from "../../context/MenuProvider";
 import { splitByHeadings } from "../../helper/parsePdfText";
 import { usePdfText } from "../../hooks/usePdfText";
 import ImagePost from "../home/components/ImagePost";
+import Loader from "../../components/Loader";
 
 const ProjectDetails = () => {
   const { pages, loading, error, extract } = usePdfText();
@@ -30,7 +31,7 @@ const ProjectDetails = () => {
   );
 
   if (loading) {
-    return <div>Loading ...</div>;
+    return <Loader />;
   }
 
   if (error) {
