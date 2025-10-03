@@ -121,7 +121,7 @@ const TrainingPage = () => {
     <div className="w-full flex flex-col items-center">
       <TopMenu />
       <MenuBar active={links.Formation} />
-      <Header title="Formation" page="Fromation" img={images.HEROIMG} />
+      <Header title="Formation" page="Fromation" img={images.IMG7} />
       <div className="w-[90%] max-[500px]:w-full flex py-16 px-8 gap-8 max-[1030px]:flex-col-reverse relative">
         <div className="flex-2 flex flex-col gap-8 h-fit min-[1035px]:sticky top-2">
           <div className="border-dotted border-3 border-secondary rounded-2xl p-6">

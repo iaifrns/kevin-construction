@@ -2,10 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer";
 import MenuBar from "../../components/MenuBar";
 import TopMenu from "../../components/TopMenu";
-import {
-  images,
-  imgWerner
-} from "../../constants/images";
+import { images } from "../../constants/images";
 import { links } from "../../constants/links";
 import AboutUs from "./components/AboutUs";
 import FAQ from "./components/FAQ";
@@ -54,7 +51,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <ImagePost img={imgWerner[1]} />
+        <ImagePost img={images.IMG4} />
         <Statistiques />
         <Services />
         <AboutUs />

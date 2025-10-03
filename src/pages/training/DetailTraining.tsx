@@ -12,18 +12,18 @@ import { CustomInput } from "../contactUs/components/ContactSection";
 import emailjs from "@emailjs/browser";
 import Pointer from "../../components/Pointer";
 import { useParams } from "react-router-dom";
+import Loader from "../../components/Loader";
 
 const templateID = "template_357kjld";
 const serviceID = "service_2kye1s5";
 const publicKey = "69GnNN4nlG5ijDQs6";
 
 const DetailTraining = () => {
-
-  const {index} = useParams<{index:string}>()
+  const { index } = useParams<{ index: string }>();
 
   const [i, setI] = useState(0);
 
-  useEffect(() => setI(index ? parseInt(index) : 0),[index])
+  useEffect(() => setI(index ? parseInt(index) : 0), [index]);
 
   const [infoForm, setInfoForm] = useState<
     Record<string, { text: string; error?: string }>
@@ -40,6 +40,7 @@ const DetailTraining = () => {
   });
 
   const [sending, setSending] = useState(false);
+  const [showLoadier, setShowLoader] = useState(true);
 
   const emptyData = () => {
     setInfoForm({
@@ -123,7 +124,24 @@ const DetailTraining = () => {
     }
   };
 
-  const handleClick = (i:number) => setI(i)
+  const handleClick = (i: number) => {
+    setI(i)
+    setShowLoader(true)
+  };
+
+  useEffect(() => {
+    const t = setInterval(() => {
+      setShowLoader(!showLoadier);
+    }, 1000);
+
+    if(!showLoadier) clearInterval(t)
+
+    return () => clearInterval(t);
+  }, [showLoadier]);
+
+  if (showLoadier) {
+    return <Loader />;
+  }
 
   return (
     <div className="w-full flex flex-col items-center gap-12 ">
@@ -209,10 +227,7 @@ const DetailTraining = () => {
               </div>
               <div className="flex flex-col gap-2">
                 {trainingDetails[i].points.map((item, ind) => (
-                  <div
-                    className="flex gap-2"
-                    key={ind + item[ind]}
-                  >
+                  <div className="flex gap-2" key={ind + item[ind]}>
                     <Pointer w="20" h="20" />
                     <p className="text-lg">
                       <span className="font-bold">{Object.keys(item)}: </span>{" "}
@@ -221,7 +236,9 @@ const DetailTraining = () => {
                   </div>
                 ))}
               </div>
-              <p className="text-2xl font-semibold font-poppins mt-4">D'autre Formation</p>
+              <p className="text-2xl font-semibold font-poppins mt-4">
+                D'autre Formation
+              </p>
               <div className="flex flex-col gap-3">
                 {trainingDetails.map((detail, ind) => (
                   <>

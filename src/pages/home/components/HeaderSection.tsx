@@ -7,7 +7,7 @@ const HeaderSection = () => {
   return (
     <div
       className="w-[95%] bg-fixed rounded-2xl bg-cover"
-      style={{ backgroundImage: `url(${images.ABOUT1})` }}
+      style={{ backgroundImage: `url(${images.IMG6})` }}
     >
       <div className="w-full h-full px-8 py-12 rounded-2xl bg-primary/80 flex flex-col gap-4">
         <p className="text-white font-poppins font-bold max-[800px]:text-[42px] max-[400px]:text-[32px] text-[56px]">

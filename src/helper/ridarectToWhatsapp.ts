@@ -4,7 +4,7 @@ const ridarectToWhatsapp = () => {
 };
 
 const ridarectToFacebook = () => {
-  const url = `https://www.facebook.com/share/p/1CuYeZrHMg/`;
+  const url = `https://www.facebook.com/share/1FDDoNcAJS/`;
   window.open(url, "_blank");
 };
 

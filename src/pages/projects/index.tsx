@@ -16,7 +16,7 @@ const ProjectPage = () => {
     <div className="m-0 p-0 flex flex-col w-full items-center">
       <TopMenu />
       <MenuBar active={links.project} />
-      <Header title="Projects" page="Projects" img={images.IMG2} />
+      <Header title="Projects" page="Projects" img={images.IMG6} />
       <div className="w-[90%] flex flex-col items-center justify-center py-16">
         <p className="font-poppins text-gray-600 font-bold text-xl">PROJETS</p>
         <p className="font-poppins text-titletext font-bold max-[1035px]:text-[40px] text-[48px] max-[800px]:text-3xl text-center">
