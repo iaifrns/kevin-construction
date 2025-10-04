@@ -18,12 +18,12 @@ const menu:{text:string, link: string}[] = [
     link: links.project
 },
 {
-    text: "Contact",
-    link: links.contact
-},
-{
     text: "Formation",
     link: links.Formation
+},
+{
+    text: "Contact",
+    link: links.contact
 },
 ]
 

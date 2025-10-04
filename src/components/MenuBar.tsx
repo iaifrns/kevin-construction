@@ -14,7 +14,7 @@ const MenuBar = ({ active }: { active: string }) => {
       <div className="flex items-center justify-center">
         <img src={images.LOGO} alt={images.LOGO} className="w-[65px]" />
         <div className="flex flex-col w-[270px]">
-          <span className="text-[28px] max-[500px]:text-3xl font-poppins text-white font-bold space-y-0">
+          <span className="text-2xl font-poppins text-white font-bold space-y-0">
             <p className="mb-0 leading-tight">Groupe Beaux</p>
             <p className="mb-0 leading-snug">Services (GBS)</p> 
           </span>
