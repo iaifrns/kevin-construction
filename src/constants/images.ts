@@ -22,6 +22,9 @@ import IMG4 from "../assets/WhatsApp Image 2025-10-01 at 18.32.48_f86577a5.jpg";
 import IMG5 from "../assets/WhatsApp Image 2025-10-01 at 18.32.49_71f06069.jpg";
 import IMG6 from "../assets/WhatsApp Image 2025-10-01 at 18.32.47_2f048927.jpg";
 import IMG7 from "../assets/WhatsApp Image 2025-10-01 at 18.32.48_b187b320.jpg";
+import IMG8 from "../assets/WhatsApp Image 2025-10-09 at 19.04.57_a93e8a76.jpg";
+import IMG9 from "../assets/WhatsApp Image 2025-10-09 at 19.04.58_0de23deb.jpg";
+import IMG10 from "../assets/WhatsApp Image 2025-10-09 at 19.04.58_87e80e31.jpg";
 import AVATAR1 from "../assets/WhatsApp Image 2025-08-20 at 11.26.17_1d7aa0de.jpg";
 import GOLF1 from "../assets/gold/IMG-20220804-WA0021.jpg";
 import GOLF2 from "../assets/gold/WhatsApp Image 2024-07-22 at 15.12.03.jpeg";
@@ -139,6 +142,9 @@ const images = {
   IMG5,
   IMG6,
   IMG7,
+  IMG8,
+  IMG9,
+  IMG10,
   AVATAR1,
   USERLOGO,
   COURSE1,
